@@ -86,7 +86,6 @@ header h1 {
 
 /* Bottom info bar */
 .demon-info-bar {
-    display: flex;
     justify-content: center;      /* center horizontally */
     gap: 40px;                     /* slightly further apart */
     font-size: 1em;                /* slightly bigger */
