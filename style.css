@@ -1,72 +1,94 @@
+/* General Page Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1e1e2f;
-    color: #f0f0f0;
     margin: 0;
-    padding: 0;
+    background-color: #1b1b2f;
+    color: #f0f0f0;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #2e2e4f;
+    background-color: #2c2c50;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
 }
 
 header h1 {
     margin: 0;
     font-size: 2em;
-    color: #ffd700;
+    color: #b57edc; /* purple accent */
 }
 
+/* Demon List Container */
 #demon-list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     padding: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
+/* Demon Card */
 .demon-card {
-    display: flex;             /* horizontal layout */
-    align-items: stretch;      /* children fill card height */
+    display: flex;
+    align-items: stretch;
+    position: relative;
     background-color: #2a2a4b;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    transition: transform 0.2s;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
     overflow: hidden;
-    min-height: 120px;          /* ensures the card has height */
+    min-height: 180px;
+    transition: transform 0.2s;
 }
 
 .demon-card:hover {
     transform: translateY(-5px);
 }
 
-.demon-card img:first-child {
-    width: 200px;              /* fixed width for left image */
-    object-fit: cover;         /* cover full height/width nicely */
-    flex-shrink: 0;            /* don’t shrink */
+/* Left: Demon Image */
+.demon-image {
+    flex-shrink: 0;
+    object-fit: cover;
+    height: 100%;
 }
 
-.demon-info {
-    flex: 1;                   /* take remaining space */
-    padding: 10px 15px;
+/* Right Content Area */
+.demon-content {
+    flex: 1;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    position: relative;
 }
 
-.demon-info h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #ffd700;
+/* Ranking & Title */
+.demon-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #b57edc;
 }
 
-.demon-info p {
-    margin: 2px 0;
-    font-size: 0.9em;
+/* Bottom Info Bar */
+.demon-info-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95em;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 5px;
+    margin-top: 10px;
 }
 
-.demon-icon {
-    width: 40px;
-    height: 40px;
-    align-self: flex-start;
+/* Demon Face Image (difficulty) */
+.demon-face {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
