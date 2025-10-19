@@ -27,7 +27,7 @@ header h1 {
 
 .demon-card {
     display: flex;
-    align-items: stretch; /* Make children stretch to card height */
+    align-items: center;
     background-color: #2a2a4b;
     border-radius: 10px;
     padding: 0; /* Remove padding to make image flush */
@@ -41,10 +41,10 @@ header h1 {
 }
 
 .demon-card img:first-child { /* The main image on the left */
-    height: 100%; /* Fill card height */
-    width: auto;  /* Keep aspect ratio */
+    height: 100%;
+    width: auto;
     object-fit: cover;
-    border-radius: 0; /* flush edges */
+    border-radius: 0;
 }
 
 .demon-info {
