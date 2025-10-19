@@ -31,12 +31,7 @@ fetch('demons.json?t=' + new Date().getTime())
             });
         }
 
-        renderDemons(); // initial render
-
-        // --- now safe to use demons here ---
-        const sortSelect = document.getElementById('sort');
-        sortSelect.addEventListener('change', () => {
-            const sortBy = sortSelect.value;
+        function sort(sortBy) {
             demons.sort((a, b) => {
                 if (typeof a[sortBy] === 'string') {
                     return a[sortBy].localeCompare(b[sortBy]);
@@ -44,6 +39,16 @@ fetch('demons.json?t=' + new Date().getTime())
                     return b[sortBy] - a[sortBy];
                 }
             });
+        }
+
+        sort("gddlRating")
+        renderDemons(); // initial render
+
+        // --- now safe to use demons here ---
+        const sortSelect = document.getElementById('sort');
+        sortSelect.addEventListener('change', () => {
+            const sortBy = sortSelect.value;
+            sort(sortBy)
             renderDemons();
         });
     })
