@@ -1,18 +1,326 @@
-[{
-        "name": "Theory of Every v2",
-        "difficulty": "assets/easy demon.png",
-        "id": 369294,
-        "attempts": 226,
-        "gddlRating": 2.06,
-        "enjoymentRating": 8.0,
-        "image": "assets/theory of every v2.jpg"
+[
+    {
+        "Name": "Theory of Every v2*",
+        "id": 369294
     },
     {
-        "name": "Asajdhbnsjd",
-        "difficulty": "Medium Demon",
-        "id": 654321,
-        "attempts": 30,
-        "gddlRating": 3.8,
-        "enjoymentRating": 4.2
+        "Name": "Electroman Adven v2*",
+        "id": 428765
+    },
+    {
+        "Name": "Clubstep v2*",
+        "id": 450920
+    },
+    {
+        "Name": "Electrodynamix v2*",
+        "id": 839175
+    },
+    {
+        "Name": "Hexagon Force v2",
+        "id": 1698428
+    },
+    {
+        "Name": "ToE II v2",
+        "id": 3013070
+    },
+    {
+        "Name": "Nine Circles",
+        "id": 4284013
+    },
+    {
+        "Name": "Verity",
+        "id": 18834999
+    },
+    {
+        "Name": "Sakupen Egg",
+        "id": 58002670
+    },
+    {
+        "Name": "Biru",
+        "id": 47611766
+    },
+    {
+        "Name": "The Lightning Road",
+        "id": 55520
+    },
+    {
+        "Name": "Virtualization",
+        "id": 76799716
+    },
+    {
+        "Name": "Mirror Force",
+        "id": 22390740
+    },
+    {
+        "Name": "Dance Massacre",
+        "id": 11607707
+    },
+    {
+        "Name": "White Women",
+        "id": 63075323
+    },
+    {
+        "Name": "The Farewell",
+        "id": 28352064
+    },
+    {
+        "Name": "Future Funk",
+        "id": 44062068
+    },
+    {
+        "Name": "Change of Scene",
+        "id": 90475473
+    },
+    {
+        "Name": "iSpyWithMyLittleEye",
+        "id": 89886591
+    },
+    {
+        "Name": "Demon Park",
+        "id": 10109
+    },
+    {
+        "Name": "Acropolis",
+        "id": 5155022
+    },
+    {
+        "Name": "Supersonic",
+        "id": 4706930
+    },
+    {
+        "Name": "Collapse",
+        "id": 70444933
+    },
+    {
+        "Name": "Section",
+        "id": 62378908
+    },
+    {
+        "Name": "Invisible Clubstep",
+        "id": 1347537
+    },
+    {
+        "Name": "I Made This 4 Fun",
+        "id": 92716951
+    },
+    {
+        "Name": "Still A Way",
+        "id": 102246454
+    },
+    {
+        "Name": "Rusted World",
+        "id": 76047685
+    },
+    {
+        "Name": "Warehouse",
+        "id": 88023111
+    },
+    {
+        "Name": "Blindfolder",
+        "id": 91279768
+    },
+    {
+        "Name": "Mechanical Showdown",
+        "id": 27786218
+    },
+    {
+        "Name": "Silent ClubX Rebirth",
+        "id": 86155700
+    },
+    {
+        "Name": "Reanimation",
+        "id": 14975695
+    },
+    {
+        "Name": "8o",
+        "id": 9145341
+    },
+    {
+        "Name": "To the Grave",
+        "id": 12556
+    },
+    {
+        "Name": "Sidestep",
+        "id": 18025697
+    },
+    {
+        "Name": "Traction",
+        "id": 23189196
+    },
+    {
+        "Name": "STARPUNK",
+        "id": 63087691
+    },
+    {
+        "Name": "Ratio Circles",
+        "id": 77132030
+    },
+    {
+        "Name": "Anasthasia",
+        "id": 78797905
+    },
+    {
+        "Name": "Raven",
+        "id": 107791691
+    },
+    {
+        "Name": "Star Road",
+        "id": 98071844
+    },
+    {
+        "Name": "Voyager",
+        "id": 27143567
+    },
+    {
+        "Name": "Chromatique",
+        "id": 105383537
+    },
+    {
+        "Name": "Zircon",
+        "id": 76821414
+    },
+    {
+        "Name": "Common s3nse",
+        "id": 86880648
+    },
+    {
+        "Name": "Bass Knight",
+        "id": 14487546
+    },
+    {
+        "Name": "NTTE",
+        "id": 103574402
+    },
+    {
+        "Name": "Buried Angel",
+        "id": 38514054
+    },
+    {
+        "Name": "Weird",
+        "id": 76564776
+    },
+    {
+        "Name": "ClutterX",
+        "id": 62067918
+    },
+    {
+        "Name": "Death Moon",
+        "id": 8660411
+    },
+    {
+        "Name": "Cosmic Rush",
+        "id": 86012792
+    },
+    {
+        "Name": "Lucy",
+        "id": 104151099
+    },
+    {
+        "Name": "Motion",
+        "id": 15619194
+    },
+    {
+        "Name": "Wowzers Holy",
+        "id": 27912428
+    },
+    {
+        "Name": "Fast N Spicy",
+        "id": 81742215
+    },
+    {
+        "Name": "Bloudeleuste",
+        "id": 77428474
+    },
+    {
+        "Name": "Color Crusher",
+        "id": 77492867
+    },
+    {
+        "Name": "Fratura",
+        "id": 78079575
+    },
+    {
+        "Name": "Red Dart",
+        "id": 77614559
+    },
+    {
+        "Name": "Scarlet Smog",
+        "id": 67113181
+    },
+    {
+        "Name": "Broken Reality",
+        "id": 62133870
+    },
+    {
+        "Name": "Speed of Light II",
+        "id": 7016598
+    },
+    {
+        "Name": "Well Rested",
+        "id": 83444471
+    },
+    {
+        "Name": "Gy",
+        "id": 76158198
+    },
+    {
+        "Name": "Tengu Wind",
+        "id": 47853491
+    },
+    {
+        "Name": "Cant Let Vulc",
+        "id": 86665617
+    },
+    {
+        "Name": "Hellcat",
+        "id": 43010906
+    },
+    {
+        "Name": "CraZy",
+        "id": 40945673
+    },
+    {
+        "Name": "Citadel",
+        "id": 112204024
+    },
+    {
+        "Name": "Based",
+        "id": 63454942
+    },
+    {
+        "Name": "Nitrogen",
+        "id": 23300671
+    },
+    {
+        "Name": "HeLL",
+        "id": 25706351
+    },
+    {
+        "Name": "Resurrection",
+        "id": 9287687
+    },
+    {
+        "Name": "Crisis Complex",
+        "id": 52663172
+    },
+    {
+        "Name": "in rainbows",
+        "id": 60084691
+    },
+    {
+        "Name": "NODE",
+        "id": 106696944
+    },
+    {
+        "Name": "Grey Trap",
+        "id": 7887341
+    },
+    {
+        "Name": "ThermoDynamix",
+        "id": 38445559
+    },
+    {
+        "Name": "Space Circles",
+        "id": 9864147
     }
 ]
