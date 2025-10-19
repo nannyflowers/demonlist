@@ -9,19 +9,16 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: flex-start;   /* vertical alignment at the top */
-    justify-content: flex-start; /* horizontal alignment to the left */
     background-color: #2c2c50;
-    padding: 20px;             /* adds space around content */
+    text-align: center;
+    padding: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.5);
-    height: 100px;             /* optional: control header height */
 }
 
 header h1 {
-    margin: 20px 0 0 20px;     /* top margin to push it down, left margin to move it right/left */
+    margin: 0;
     font-size: 2em;
-    color: #b57edc;            /* purple accent */
+    color: #b57edc; /* purple accent */
 }
 
 /* ========================
@@ -87,7 +84,7 @@ header h1 {
 
 /* Title */
 .demon-title {
-    font-size: 4em;
+    font-size: 1.8em;
     font-weight: bold;
     color: #b57edc;
     margin-bottom: 10px;
@@ -99,8 +96,8 @@ header h1 {
     justify-content: center;    /* center horizontally */
     align-items: center;
     gap: 40px;                  /* space between items */
-    font-size: 5em;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 400;
     color: #b57edc;
 
     position: absolute;         /* stick to bottom of card */
