@@ -71,9 +71,9 @@ header h1 {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+    position: relative; /* needed for absolute positioning of bottom bar */
 }
+
 
 /* Ranking & title */
 .demon-title {
@@ -86,15 +86,19 @@ header h1 {
 
 /* Bottom info bar */
 .demon-info-bar {
-    justify-content: center;      /* center horizontally */
-    gap: 40px;                     /* slightly further apart */
-    font-size: 1em;                /* slightly bigger */
-    font-weight: 400;              /* less bold */
-    color: #b57edc;                /* purple accent */
-    border-top: 1px solid rgba(255,255,255,0.2);
-    padding-top: 5px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    gap: 40px;                 /* space between items */
+    font-size: 1em;
+    font-weight: 400;
+    color: #b57edc;
+
+    position: absolute;        /* detach from normal flow */
+    bottom: 10px;              /* distance from panel bottom */
+    left: 50%;                 /* start at horizontal center */
+    transform: translateX(-50%); /* true center */
 }
+
 
 
 .demon-info-bar div {
