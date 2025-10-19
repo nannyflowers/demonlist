@@ -11,11 +11,12 @@ fetch('demons.json?t=' + new Date().getTime())
             console.log(demon)
             const card = document.createElement('div');
             card.className = 'demon-card';
+            image = "assets/".concat(demon.id).concat("png");
 
             card.innerHTML = `
                 <!-- Left Image -->
                 <div class="demon-image-wrapper">
-                    <img class="demon-image" src="assets/thenightmare.jpg" alt="${demon.name}">
+                    <img class="demon-image" src=image alt="${demon.name}">
                 </div>
 
                 <!-- Right Content -->
