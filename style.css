@@ -26,7 +26,6 @@ header h1 {
 }
 
 .demon-card {
-    display: flex;
     align-items: center;
     background-color: #2a2a4b;
     border-radius: 10px;
