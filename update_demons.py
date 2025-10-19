@@ -19,5 +19,4 @@ df = df.rename(columns={
 demons = df.to_dict(orient="records")
 
 with open(json_file, "w") as f:
-    print(demons)
     json.dump(demons, f, indent=4, ensure_ascii=False)
