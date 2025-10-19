@@ -97,6 +97,10 @@ header h1 {
     margin-top: 10px;
 }
 
+.demon-info-bar div {
+    flex: 0;     /* each element takes only as much space as needed */
+}
+
 /* Demon face image */
 .demon-face {
     position: absolute;
