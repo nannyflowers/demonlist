@@ -16,8 +16,8 @@ header {
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2em;
+    margin: 20%;
+    font-size: 4em;
     color: #b57edc; /* purple accent */
 }
 
