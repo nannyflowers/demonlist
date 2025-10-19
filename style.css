@@ -32,14 +32,13 @@ header h1 {
 /* Demon Card */
 .demon-card {
     display: flex;
-    align-items: stretch;
-    position: relative;
+    align-items: stretch;   /* children stretch vertically */
+    min-height: 180px;      /* adjust panel height */
     background-color: #2a2a4b;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.5);
     overflow: hidden;
-    min-height: 180px;
-    transition: transform 0.2s;
+    position: relative;
 }
 
 .demon-card:hover {
@@ -48,9 +47,10 @@ header h1 {
 
 /* Left: Demon Image */
 .demon-image {
-    flex-shrink: 0;
-    object-fit: cover;
-    height: 100%;
+    flex-shrink: 0;         /* don’t shrink */
+    height: 100%;           /* fill panel height */
+    width: auto;            /* keep aspect ratio */
+    object-fit: cover;      /* cover height nicely */
 }
 
 /* Right Content Area */
