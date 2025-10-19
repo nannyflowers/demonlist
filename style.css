@@ -27,24 +27,24 @@ header h1 {
 
 .demon-card {
     display: flex;
-    align-items: center;
+    align-items: stretch; /* Make children stretch to card height */
     background-color: #2a2a4b;
     border-radius: 10px;
-    padding: 10px;
-    gap: 15px;
+    padding: 0; /* Remove padding to make image flush */
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.2s;
+    overflow: hidden; /* Prevent image overflow if it exceeds border radius */
 }
 
 .demon-card:hover {
     transform: translateY(-5px);
 }
 
-.demon-card img {
-    width: 180px;
-    height: 100px;
+.demon-card img:first-child { /* The main image on the left */
+    height: 100%; /* Fill card height */
+    width: auto;  /* Keep aspect ratio */
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0; /* flush edges */
 }
 
 .demon-info {
