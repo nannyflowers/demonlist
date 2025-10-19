@@ -20,7 +20,7 @@ header {
 
 header h1 {
     margin: 20px 0 0 20px;     /* top margin to push it down, left margin to move it right/left */
-    font-size: 8em;
+    font-size: 2em;
     color: #b57edc;            /* purple accent */
 }
 
@@ -87,7 +87,7 @@ header h1 {
 
 /* Title */
 .demon-title {
-    font-size: 1.8em;
+    font-size: 4em;
     font-weight: bold;
     color: #b57edc;
     margin-bottom: 10px;
@@ -99,8 +99,8 @@ header h1 {
     justify-content: center;    /* center horizontally */
     align-items: center;
     gap: 40px;                  /* space between items */
-    font-size: 1em;
-    font-weight: 400;
+    font-size: 3em;
+    font-weight: 600;
     color: #b57edc;
 
     position: absolute;         /* stick to bottom of card */
