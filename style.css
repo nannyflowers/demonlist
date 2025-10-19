@@ -25,39 +25,33 @@ header h1 {
     padding: 20px;
 }
 
-.demon-card:hover {
-    transform: translateY(-5px);
-}
-
 .demon-card {
-    display: flex;
-    align-items: stretch;       /* children fill card height */
+    display: flex;             /* horizontal layout */
+    align-items: stretch;      /* children fill card height */
     background-color: #2a2a4b;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.2s;
     overflow: hidden;
-    min-height: 120px;          /* ensures card has height */
+    min-height: 120px;          /* ensures the card has height */
 }
 
-.demon-card img.main-image {    /* target main image explicitly */
-    width: 200px;               /* fixed width */
-    flex-shrink: 0;             /* prevent shrinking */
-    object-fit: cover;          /* fills height nicely */
+.demon-card:hover {
+    transform: translateY(-5px);
+}
+
+.demon-card img:first-child {
+    width: 200px;              /* fixed width for left image */
+    object-fit: cover;         /* cover full height/width nicely */
+    flex-shrink: 0;            /* don’t shrink */
 }
 
 .demon-info {
-    flex: 1;
+    flex: 1;                   /* take remaining space */
     padding: 10px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.demon-icon {
-    width: 40px;
-    height: 40px;
-    align-self: flex-start;      /* icon stays in top-left of info */
 }
 
 .demon-info h3 {
@@ -69,4 +63,10 @@ header h1 {
 .demon-info p {
     margin: 2px 0;
     font-size: 0.9em;
+}
+
+.demon-icon {
+    width: 40px;
+    height: 40px;
+    align-self: flex-start;
 }
