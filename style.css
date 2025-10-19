@@ -86,23 +86,22 @@ header h1 {
 
 /* Bottom info bar */
 .demon-info-bar {
-    display: flex;
+    display: flex;             /* make items sit in a row */
     justify-content: center;   /* center horizontally */
-    gap: 40px;                 /* space between items */
+    align-items: center;       /* vertically align text */
+    gap: 40px;                 /* space between each item */
     font-size: 1em;
     font-weight: 400;
     color: #b57edc;
 
-    position: absolute;        /* detach from normal flow */
-    bottom: 10px;              /* distance from panel bottom */
-    left: 50%;                 /* start at horizontal center */
-    transform: translateX(-50%); /* true center */
+    position: absolute;        /* keep at bottom of card */
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-
-
 .demon-info-bar div {
-    flex: 0;     /* each element takes only as much space as needed */
+    flex: 0 0 auto;     /* each element takes only as much space as needed */
 }
 
 /* Demon face image */
