@@ -25,6 +25,7 @@ fetch('demons.json')
                         <span>Attempts: ${demon.attempts}</span>
                         <span>GDDL Rating: ${demon.gddlRating}</span>
                         <span>Enjoyment: ${demon.enjoymentRating}</span>
+                        <span>ID: ${demon.id}</span>
                     </div>
 
                     <!-- Face Icon -->
