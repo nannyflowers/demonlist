@@ -1,7 +1,7 @@
 [
     {
         "name": "The Hellscape",
-        "difficulty": "Insane Demon",
+        "difficulty": "assets/easy demon.png",
         "id": 123456,
         "attempts": 50,
         "gddlRating": 4.5,
