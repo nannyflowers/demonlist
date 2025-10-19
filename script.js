@@ -11,7 +11,7 @@ fetch('demons.json?t=' + new Date().getTime())
             console.log(demon)
             const card = document.createElement('div');
             card.className = 'demon-card';
-            image = "assets/".concat(demon.id).concat("png");
+            image = "assets/".concat(demon.id).concat(".webp");
 
             card.innerHTML = `
                 <!-- Left Image -->
