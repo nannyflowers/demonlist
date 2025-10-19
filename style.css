@@ -99,7 +99,7 @@ header h1 {
     justify-content: center;    /* center horizontally */
     align-items: center;
     gap: 40px;                  /* space between items */
-    font-size: 3em;
+    font-size: 5em;
     font-weight: 600;
     color: #b57edc;
 
