@@ -87,8 +87,8 @@ header h1 {
 /* Bottom info bar */
 .demon-info-bar {
     display: flex;
-    justify-content: flex-start;  /* left-align all items */
-    gap: 25px;                     /* closer together */
+    justify-content: center;      /* center horizontally */
+    gap: 40px;                     /* slightly further apart */
     font-size: 1em;                /* slightly bigger */
     font-weight: 400;              /* less bold */
     color: #b57edc;                /* purple accent */
@@ -96,6 +96,7 @@ header h1 {
     padding-top: 5px;
     margin-top: 10px;
 }
+
 
 .demon-info-bar div {
     flex: 0;     /* each element takes only as much space as needed */
