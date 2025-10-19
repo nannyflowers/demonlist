@@ -20,18 +20,19 @@ header h1 {
 
 #demon-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 15px;
     padding: 20px;
 }
 
 .demon-card {
+    display: flex;
+    align-items: center;
     background-color: #2a2a4b;
     border-radius: 10px;
+    padding: 10px;
+    gap: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    padding: 15px;
-    width: 220px;
     transition: transform 0.2s;
 }
 
@@ -39,12 +40,29 @@ header h1 {
     transform: translateY(-5px);
 }
 
-.demon-card h3 {
-    margin-top: 0;
+.demon-card img {
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.demon-info {
+    flex: 1;
+}
+
+.demon-info h3 {
+    margin: 0;
+    font-size: 1.2em;
     color: #ffd700;
 }
 
-.demon-card p {
-    margin: 5px 0;
+.demon-info p {
+    margin: 2px 0;
     font-size: 0.9em;
+}
+
+.demon-icon {
+    width: 40px;
+    height: 40px;
 }
