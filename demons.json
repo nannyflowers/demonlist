@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": "Theory of Every v2",
         "difficulty": "assets/easy demon.png",
         "id": 369294,
@@ -9,7 +8,7 @@
         "image": "assets/theory of every v2.jpg"
     },
     {
-        "name": "Another Demon",
+        "name": "Asajdhbnsjd",
         "difficulty": "Medium Demon",
         "id": 654321,
         "attempts": 30,
