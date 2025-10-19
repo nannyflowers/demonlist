@@ -12,7 +12,7 @@ fetch('demons.json')
 
             card.innerHTML = `
                 <!-- Left Demon Image -->
-                <img class="demon-image" src="${demon.image}" alt="${demon.name}">
+                <img class="demon-image" src="../assets/thenightmare.jpg" alt="${demon.name}">
 
                 <!-- Right Content -->
                 <div class="demon-content">
