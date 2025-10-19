@@ -1,15 +1,15 @@
-/* General Page Styles */
+/* General page styles */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
+    font-family: 'Arial', sans-serif;
     background-color: #1b1b2f;
     color: #f0f0f0;
 }
 
 header {
+    background-color: #2c2c50;
     text-align: center;
     padding: 20px;
-    background-color: #2c2c50;
     box-shadow: 0 4px 6px rgba(0,0,0,0.5);
 }
 
@@ -19,7 +19,7 @@ header h1 {
     color: #b57edc; /* purple accent */
 }
 
-/* Demon List Container */
+/* Demon list container */
 #demon-list {
     display: flex;
     flex-direction: column;
@@ -29,32 +29,37 @@ header h1 {
     overflow-y: auto;
 }
 
-/* Demon Card */
+/* Demon card */
 .demon-card {
     display: flex;
-    align-items: stretch;     /* stretch children vertically */
-    min-height: 180px;        /* sets panel height */
+    align-items: stretch;    /* children stretch vertically */
+    min-height: 180px;       /* panel height */
     background-color: #2a2a4b;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.5);
     overflow: hidden;
     position: relative;
+    transition: transform 0.2s;
 }
 
 .demon-card:hover {
     transform: translateY(-5px);
 }
 
-/* Left: Demon Image */
-.demon-image {
-    height: 100%;             /* fill panel vertically */
-    width: auto;              /* keep aspect ratio */
-    max-width: 40%;           /* prevent image from being too wide */
-    flex-shrink: 0;           /* prevent shrinking */
-    object-fit: cover;        /* crop if necessary */
+/* Left: Demon image */
+.demon-image-wrapper {
+    height: 100%;
+    overflow: hidden;        /* crop horizontal overflow */
 }
 
-/* Right Content Area */
+.demon-image {
+    height: 100%;            /* match panel height */
+    width: auto;             /* keep aspect ratio */
+    object-fit: cover;
+    display: block;
+}
+
+/* Right content */
 .demon-content {
     flex: 1;
     padding: 15px;
@@ -64,24 +69,23 @@ header h1 {
     position: relative;
 }
 
-/* Ranking & Title */
+/* Ranking & title */
 .demon-title {
     font-size: 1.5em;
     font-weight: bold;
     color: #b57edc;
 }
 
-/* Bottom Info Bar */
+/* Bottom info bar */
 .demon-info-bar {
     display: flex;
     justify-content: space-between;
     font-size: 0.95em;
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 5px;
-    margin-top: 10px;
 }
 
-/* Demon Face Image (difficulty) */
+/* Demon face image */
 .demon-face {
     position: absolute;
     right: 15px;
