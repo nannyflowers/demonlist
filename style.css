@@ -31,27 +31,30 @@ header h1 {
 
 .demon-card {
     display: flex;             /* horizontal layout */
-    align-items: stretch;      /* children stretch vertically */
+    align-items: stretch;      /* children fill card height */
     background-color: #2a2a4b;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.2s;
     overflow: hidden;
+    min-height: 120px;         /* ensure card has height */
 }
 
 .demon-card img:first-child {
     width: 200px;              /* fixed width */
-    object-fit: cover;         /* fill image area nicely */
+    object-fit: cover;         /* fill image nicely */
     flex-shrink: 0;            /* prevent shrinking */
+    height: auto;              /* let flex control height */
 }
 
 .demon-info {
-    flex: 1;                   /* take remaining space */
+    flex: 1;
     padding: 10px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 
 .demon-info h3 {
