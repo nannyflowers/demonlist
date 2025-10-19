@@ -14,7 +14,7 @@ fetch('demons.json')
             card.innerHTML = `
                 <!-- Left Image -->
                 <div class="demon-image-wrapper">
-                    <img class="demon-image" src="${demon.image}" alt="${demon.Name}">
+                    <img class="demon-image" src="${demon.image}" alt="${demon.name}">
                 </div>
 
                 <!-- Right Content -->
@@ -23,9 +23,9 @@ fetch('demons.json')
 
                     <!-- Bottom Info Bar using spans -->
                     <div class="demon-info-bar">
-                        <span>Attempts: ${demon.Attempts}</span>
-                        <span>GDDL Rating: ${demon["GDDL Rating"]}</span>
-                        <span>Enjoyment: ${demon["Enjoyment (/10)"]}</span>
+                        <span>Attempts: ${demon.attempts}</span>
+                        <span>GDDL Rating: ${demon.gddlRating}</span>
+                        <span>Enjoyment: ${demon.enjoymentRating}</span>
                         <span>ID: ${demon.id}</span>
                     </div>
 
