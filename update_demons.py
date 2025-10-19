@@ -6,7 +6,7 @@ excel_file = "GD Demon List.xlsx"
 json_file = "demons.json"
 
 df = pd.read_excel(excel_file)
-columns_to_keep = ["Name", "id"]
+columns_to_keep = ["Name", "id", "Enjoyment (/10)", "GDDL Rating", "Attempts"]
 df = df[columns_to_keep]
 
 demons = df.to_dict(orient="records")
