@@ -9,16 +9,19 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: flex-start;   /* vertical alignment at the top */
+    justify-content: flex-start; /* horizontal alignment to the left */
     background-color: #2c2c50;
-    text-align: left;
-    padding: 40px 20px 20px 40px;
+    padding: 20px;             /* adds space around content */
     box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    height: 100px;             /* optional: control header height */
 }
 
 header h1 {
-    margin: 0px;
-    font-size: 4em;
-    color: #b57edc; /* purple accent */
+    margin: 20px 0 0 20px;     /* top margin to push it down, left margin to move it right/left */
+    font-size: 2em;
+    color: #b57edc;            /* purple accent */
 }
 
 /* ========================
