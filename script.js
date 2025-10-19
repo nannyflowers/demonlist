@@ -16,7 +16,7 @@ fetch('demons.json?t=' + new Date().getTime())
             card.innerHTML = `
                 <!-- Left Image -->
                 <div class="demon-image-wrapper">
-                    <img class="demon-image" src=image alt="${demon.name}">
+                    <img class="demon-image" src=${image} alt="${demon.name}">
                 </div>
 
                 <!-- Right Content -->
