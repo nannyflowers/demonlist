@@ -8,7 +8,7 @@ fetch('demons.json')
             card.className = 'demon-card';
 
             card.innerHTML = `
-                <img src="${demon.image}" alt="${demon.name}">
+                <img class="main-image" src="${demon.image}" alt="${demon.name}">
                 <div class="demon-info">
                     <h3>#${index + 1} - ${demon.name}</h3>
                     <p><strong>Creator:</strong> ${demon.creator}</p>
@@ -20,6 +20,7 @@ fetch('demons.json')
                 </div>
                 <img class="demon-icon" src="${demon.icon}" alt="icon">
             `;
+
 
             container.appendChild(card);
         });
