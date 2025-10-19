@@ -2,7 +2,7 @@ fetch('demons.json')
     .then(response => response.json())
     .then(demons => {
         // Sort demons by gddlRating descending
-        demons.sort((a,b) => b.gddlRating - a.gddlRating);
+        demons.sort((a, b) => b.gddlRating - a.gddlRating);
 
         const container = document.getElementById('demon-list');
 
@@ -19,13 +19,15 @@ fetch('demons.json')
                 <!-- Right Content -->
                 <div class="demon-content">
                     <div class="demon-title">#${index + 1} - ${demon.name}</div>
-                    
+
+                    <!-- Bottom Info Bar using spans -->
                     <div class="demon-info-bar">
-                        <div>Attempts: ${demon.attempts}</div>
-                        <div>GDDL Rating: ${demon.gddlRating}</div>
-                        <div>Enjoyment: ${demon.enjoymentRating}</div>
+                        <span>Attempts: ${demon.attempts}</span>
+                        <span>GDDL Rating: ${demon.gddlRating}</span>
+                        <span>Enjoyment: ${demon.enjoymentRating}</span>
                     </div>
 
+                    <!-- Face Icon -->
                     <img class="demon-face" src="${demon.difficulty}" alt="demon face">
                 </div>
             `;
@@ -33,4 +35,4 @@ fetch('demons.json')
             container.appendChild(card);
         });
     })
-    .catch(err => console.error("Error loading demons:", err));
+    .catch(error => console.error("Error loading demons:", error));
