@@ -1,6 +1,9 @@
 fetch('demons.json')
     .then(response => response.json())
     .then(demons => {
+        // Sort demons by gddlRating descending
+        demons.sort((a, b) => b.gddlRating - a.gddlRating);
+
         const container = document.getElementById('demon-list');
 
         demons.forEach((demon, index) => {
@@ -8,19 +11,22 @@ fetch('demons.json')
             card.className = 'demon-card';
 
             card.innerHTML = `
-                src="${demon.image || '..assets/thenightmare.jpg'}"
-                <div class="demon-info">
-                    <h3>#${index + 1} - ${demon.name}</h3>
-                    <p><strong>Creator:</strong> ${demon.creator}</p>
-                    <p><strong>Difficulty:</strong> ${demon.difficulty}</p>
-                    <p><strong>ID:</strong> ${demon.id}</p>
-                    <p><strong>Attempts:</strong> ${demon.attempts}</p>
-                    <p><strong>GDDL Rating:</strong> ${demon.gddlRating}</p>
-                    <p><strong>Enjoyment:</strong> ${demon.enjoymentRating}</p>
-                </div>
-                <img class="demon-icon" src="${demon.icon}" alt="icon">
-            `;
+                <!-- Left Demon Image -->
+                <img class="demon-image" src="${demon.image}" alt="${demon.name}">
 
+                <!-- Right Content -->
+                <div class="demon-content">
+                    <div class="demon-title">#${index + 1} - ${demon.name}</div>
+
+                    <div class="demon-info-bar">
+                        <div>Attempts: ${demon.attempts}</div>
+                        <div>GDDL Rating: ${demon.gddlRating}</div>
+                        <div>Enjoyment: ${demon.enjoymentRating}</div>
+                    </div>
+
+                    <img class="demon-face" src="${demon.difficulty}" alt="demon face">
+                </div>
+            `;
 
             container.appendChild(card);
         });
