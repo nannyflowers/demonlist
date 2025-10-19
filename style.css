@@ -1,4 +1,6 @@
-/* General page styles */
+/* ========================
+   General Page Styles
+   ======================== */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -19,21 +21,25 @@ header h1 {
     color: #b57edc; /* purple accent */
 }
 
-/* Demon list container */
+/* ========================
+   Demon List Container
+   ======================== */
 #demon-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
     max-height: 90vh;
-    overflow-y: auto;
+    overflow-y: auto; /* scrollable list */
 }
 
-/* Demon card */
+/* ========================
+   Demon Card
+   ======================== */
 .demon-card {
     display: flex;
-    align-items: stretch;
-    height: 200px;
+    align-items: stretch;       /* children fill vertical space */
+    height: 200px;              /* fixed panel height */
     background-color: #2a2a4b;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.5);
@@ -41,10 +47,6 @@ header h1 {
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform, box-shadow;
-
-    height: 200px;       /* FIXED height */
-    min-height: 200px;   /* optional, reinforce fixed size */
-    max-height: 200px;   /* optional, enforce */
 }
 
 .demon-card:hover {
@@ -52,59 +54,63 @@ header h1 {
     box-shadow: 0 10px 20px rgba(0,0,0,0.6);
 }
 
-/* Left: Demon image */
+/* ========================
+   Left Image
+   ======================== */
 .demon-image-wrapper {
     height: 100%;
-    overflow: hidden;        /* crop horizontal overflow */
+    overflow: hidden;
 }
 
 .demon-image {
-    height: 100%;            /* match panel height */
-    width: auto;             /* keep aspect ratio */
+    height: 100%;
+    width: auto;
     object-fit: cover;
+    flex-shrink: 0;
     display: block;
 }
 
-/* Right content */
+/* ========================
+   Right Content
+   ======================== */
 .demon-content {
     flex: 1;
     padding: 15px;
     display: flex;
     flex-direction: column;
-    position: relative; /* needed for absolute positioning of bottom bar */
+    position: relative;         /* needed for absolute bottom bar and face icon */
+    justify-content: flex-start; /* don't stretch title & bottom bar */
 }
 
-
-/* Ranking & title */
+/* Title */
 .demon-title {
-    font-size: 1.8em;       /* bigger */
-    font-weight: bold;       /* keep bold */
-    color: #b57edc;          /* purple accent */
-    margin-bottom: 10px;     /* space before bottom bar */
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #b57edc;
+    margin-bottom: 10px;
 }
 
-
-/* Bottom info bar */
+/* Bottom Info Bar */
 .demon-info-bar {
-    display: flex;             /* make items sit in a row */
-    justify-content: center;   /* center horizontally */
-    align-items: center;       /* vertically align text */
-    gap: 40px;                 /* space between each item */
+    display: flex;              
+    justify-content: center;    /* center horizontally */
+    align-items: center;
+    gap: 40px;                  /* space between items */
     font-size: 1em;
     font-weight: 400;
     color: #b57edc;
 
-    position: absolute;        /* keep at bottom of card */
+    position: absolute;         /* stick to bottom of card */
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.demon-info-bar div {
-    flex: 0 0 auto;     /* each element takes only as much space as needed */
+.demon-info-bar span {
+    flex: 0 0 auto;             /* prevent stretching */
 }
 
-/* Demon face image */
+/* Face Icon */
 .demon-face {
     position: absolute;
     right: 15px;
