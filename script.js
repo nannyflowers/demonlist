@@ -30,7 +30,7 @@ fetch('demons.json')
                     </div>
 
                     <!-- Face Icon -->
-                    <img class="demon-face" src="${demon.difficulty}" alt="demon face">
+                    <img class="demon-face" src="${demon.difficultyFace}" alt="demon face">
                 </div>
             `;
 
