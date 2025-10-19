@@ -1,6 +1,7 @@
 /* ========================
    General Page Styles
    ======================== */
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -10,39 +11,48 @@ body {
 
 header {
     background-color: #2c2c50;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    text-align: left;
+    /* moved left for style */
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
-    color: #b57edc; /* purple accent */
+    font-size: 3em;
+    color: #b57edc;
+    /* purple accent */
 }
+
 
 /* ========================
    Demon List Container
    ======================== */
+
 #demon-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
     max-height: 90vh;
-    overflow-y: auto; /* scrollable list */
+    overflow-y: auto;
+    /* scrollable list */
 }
+
 
 /* ========================
    Demon Card
    ======================== */
+
 .demon-card {
     display: flex;
-    align-items: stretch;       /* children fill vertical space */
-    height: 200px;              /* fixed panel height */
+    align-items: stretch;
+    /* children fill vertical space */
+    height: 200px;
+    /* fixed panel height */
     background-color: #2a2a4b;
     border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -51,66 +61,83 @@ header h1 {
 
 .demon-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
+
 
 /* ========================
    Left Image
    ======================== */
+
 .demon-image-wrapper {
     height: 100%;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .demon-image {
     height: 100%;
     width: auto;
     object-fit: cover;
-    flex-shrink: 0;
     display: block;
 }
+
 
 /* ========================
    Right Content
    ======================== */
+
 .demon-content {
     flex: 1;
-    padding: 15px;
+    padding: 15px 20px;
     display: flex;
     flex-direction: column;
-    position: relative;         /* needed for absolute bottom bar and face icon */
-    justify-content: flex-start; /* don't stretch title & bottom bar */
+    justify-content: space-between;
+    position: relative;
 }
 
+
 /* Title */
+
 .demon-title {
     font-size: 1.8em;
     font-weight: bold;
     color: #b57edc;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between ranking number and name if split */
 }
 
-/* Bottom Info Bar */
-.demon-info-bar {
-    display: flex;              
-    justify-content: center;    /* center horizontally */
-    align-items: center;
-    gap: 40px;                  /* space between items */
-    font-size: 1em;
-    font-weight: 400;
-    color: #b57edc;
 
-    position: absolute;         /* stick to bottom of card */
+/* Bottom Info Bar */
+
+.demon-info-bar {
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    gap: 50px;
+    /* space between items */
+    font-size: 1.05em;
+    font-weight: 500;
+    color: #b57edc;
+    position: absolute;
+    /* stick to bottom of card */
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .demon-info-bar span {
-    flex: 0 0 auto;             /* prevent stretching */
+    flex: 0 0 auto;
+    /* prevent stretching */
 }
 
+
 /* Face Icon */
+
 .demon-face {
     position: absolute;
     right: 15px;
@@ -120,5 +147,48 @@ header h1 {
     height: 60px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ========================
+   Scrollbar Styling
+   ======================== */
+
+#demon-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#demon-list::-webkit-scrollbar-track {
+    background: #1b1b2f;
+}
+
+#demon-list::-webkit-scrollbar-thumb {
+    background-color: #b57edc;
+    border-radius: 4px;
+}
+
+
+/* ========================
+   Responsive
+   ======================== */
+
+@media (max-width: 768px) {
+    .demon-card {
+        flex-direction: column;
+        height: auto;
+    }
+    .demon-image {
+        width: 100%;
+        height: auto;
+    }
+    .demon-face {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+    .demon-info-bar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
