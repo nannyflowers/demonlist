@@ -8,7 +8,7 @@ fetch('demons.json')
             card.className = 'demon-card';
 
             card.innerHTML = `
-                <img class="main-image" src="${demon.image}" alt="${demon.name}">
+                src="${demon.image || '..assets/thenightmare.jpg'}"
                 <div class="demon-info">
                     <h3>#${index + 1} - ${demon.name}</h3>
                     <p><strong>Creator:</strong> ${demon.creator}</p>
