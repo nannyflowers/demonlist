@@ -25,31 +25,34 @@ header h1 {
     padding: 20px;
 }
 
-.demon-card {
-    display: flex;
-    align-items: center;
-    background-color: #2a2a4b;
-    border-radius: 10px;
-    padding: 0; /* Remove padding to make image flush */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    transition: transform 0.2s;
-    overflow: hidden; /* Prevent image overflow if it exceeds border radius */
-}
-
 .demon-card:hover {
     transform: translateY(-5px);
 }
 
-.demon-card img:first-child { /* The main image on the left */
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-    border-radius: 0;
+.demon-card {
+    display: flex;             /* horizontal layout */
+    align-items: stretch;      /* children stretch vertically */
+    background-color: #2a2a4b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.demon-card img:first-child {
+    width: 200px;              /* fixed width */
+    object-fit: cover;         /* fill image area nicely */
+    flex-shrink: 0;            /* prevent shrinking */
 }
 
 .demon-info {
-    flex: 1;
+    flex: 1;                   /* take remaining space */
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 .demon-info h3 {
     margin: 0;
