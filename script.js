@@ -1,13 +1,14 @@
 fetch('demons.json?t=' + new Date().getTime())
     .then(response => response.json())
     .then(demons => {
-        console.log(demons);
+        //console.log(demons);
         // Sort demons by gddlRating descending
         demons.sort((a, b) => b.gddlRating - a.gddlRating);
 
         const container = document.getElementById('demon-list');
 
         demons.forEach((demon, index) => {
+            console.log(demon)
             const card = document.createElement('div');
             card.className = 'demon-card';
 
