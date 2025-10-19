@@ -71,8 +71,13 @@ header h1 {
 
 .demon-image-wrapper {
     height: 100%;
-    overflow: hidden;
+    width: auto;
+    /* allow width to adjust based on image aspect ratio */
+    max-width: 250px;
+    /* optional, to prevent it from being too wide */
     flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
 }
 
 .demon-image {
