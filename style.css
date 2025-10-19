@@ -30,21 +30,20 @@ header h1 {
 }
 
 .demon-card {
-    display: flex;             /* horizontal layout */
-    align-items: stretch;      /* children fill card height */
+    display: flex;
+    align-items: stretch;       /* children fill card height */
     background-color: #2a2a4b;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.2s;
     overflow: hidden;
-    min-height: 120px;         /* ensure card has height */
+    min-height: 120px;          /* ensures card has height */
 }
 
-.demon-card img:first-child {
-    width: 200px;              /* fixed width */
-    object-fit: cover;         /* fill image nicely */
-    flex-shrink: 0;            /* prevent shrinking */
-    height: auto;              /* let flex control height */
+.demon-card img.main-image {    /* target main image explicitly */
+    width: 200px;               /* fixed width */
+    flex-shrink: 0;             /* prevent shrinking */
+    object-fit: cover;          /* fills height nicely */
 }
 
 .demon-info {
@@ -55,7 +54,11 @@ header h1 {
     justify-content: center;
 }
 
-
+.demon-icon {
+    width: 40px;
+    height: 40px;
+    align-self: flex-start;      /* icon stays in top-left of info */
+}
 
 .demon-info h3 {
     margin: 0;
@@ -66,9 +69,4 @@ header h1 {
 .demon-info p {
     margin: 2px 0;
     font-size: 0.9em;
-}
-
-.demon-icon {
-    width: 40px;
-    height: 40px;
 }
