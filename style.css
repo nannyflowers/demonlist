@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2e4f;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #ffd700;
+}
+
+#demon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.demon-card {
+    background-color: #2a2a4b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    padding: 15px;
+    width: 220px;
+    transition: transform 0.2s;
+}
+
+.demon-card:hover {
+    transform: translateY(-5px);
+}
+
+.demon-card h3 {
+    margin-top: 0;
+    color: #ffd700;
+}
+
+.demon-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
