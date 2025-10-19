@@ -1,6 +1,7 @@
 fetch('demons.json')
     .then(response => response.json())
     .then(demons => {
+        console.log(demons);
         // Sort demons by gddlRating descending
         demons.sort((a, b) => b.gddlRating - a.gddlRating);
 
