@@ -33,21 +33,23 @@ header h1 {
 .demon-card {
     display: flex;
     align-items: stretch;
+    height: 200px;
     background-color: #2a2a4b;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.5);
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
 
     height: 200px;       /* FIXED height */
     min-height: 200px;   /* optional, reinforce fixed size */
     max-height: 200px;   /* optional, enforce */
 }
 
-
 .demon-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
 }
 
 /* Left: Demon image */
