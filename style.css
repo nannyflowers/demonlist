@@ -32,15 +32,18 @@ header h1 {
 /* Demon card */
 .demon-card {
     display: flex;
-    align-items: stretch;    /* children stretch vertically */
-    min-height: 180px;       /* panel height */
+    align-items: stretch;
     background-color: #2a2a4b;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.5);
     overflow: hidden;
     position: relative;
-    transition: transform 0.2s;
+
+    height: 200px;       /* FIXED height */
+    min-height: 200px;   /* optional, reinforce fixed size */
+    max-height: 200px;   /* optional, enforce */
 }
+
 
 .demon-card:hover {
     transform: translateY(-5px);
