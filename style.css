@@ -77,10 +77,12 @@ header h1 {
 
 /* Ranking & title */
 .demon-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #b57edc;
+    font-size: 1.8em;       /* bigger */
+    font-weight: bold;       /* keep bold */
+    color: #b57edc;          /* purple accent */
+    margin-bottom: 10px;     /* space before bottom bar */
 }
+
 
 /* Bottom info bar */
 .demon-info-bar {
