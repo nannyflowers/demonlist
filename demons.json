@@ -6,7 +6,7 @@
         "attempts": 50,
         "gddlRating": 4.5,
         "enjoymentRating": 4.8,
-        "image": "assets/thenightmare.jpg"
+        "image": "../assets/thenightmare.jpg"
     },
     {
         "name": "Another Demon",
