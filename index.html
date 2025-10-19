@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platinum's Demonlist</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Platinum's Demonlist</h1>
+        <div class="header-content">
+            <h1>Platinum's Demonlist</h1>
+
+            <div id="controls" class="sort-menu">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="gddlRating">GDDL Rating</option>
+                    <option value="enjoymentRating">Enjoyment</option>
+                    <option value="attempts">Attempts</option>
+                </select>
+            </div>
+        </div>
+
     </header>
 
     <main>
@@ -17,4 +31,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

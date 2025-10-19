@@ -109,6 +109,49 @@ header h1 {
     color: #b57edc;
 }
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sort-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.sort-menu label {
+    color: #b57edc;
+    font-weight: 600;
+}
+
+.sort-menu select {
+    background-color: #2a2a4b;
+    border: 2px solid #b57edc;
+    border-radius: 6px;
+    color: #b57edc;
+    font-size: 1em;
+    padding: 6px 10px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.sort-menu select:hover {
+    border-color: #d4a9ff;
+    background-color: #353565;
+}
+
+.sort-menu select:focus {
+    border-color: #d4a9ff;
+    box-shadow: 0 0 5px rgba(181, 126, 220, 0.6);
+}
+
 
 /* Bottom Info Bar */
 
