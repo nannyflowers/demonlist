@@ -5,7 +5,8 @@
         "id": 123456,
         "attempts": 50,
         "gddlRating": 4.5,
-        "enjoymentRating": 4.8
+        "enjoymentRating": 4.8,
+        "image": "assets/thenightmare"
     },
     {
         "name": "Another Demon",
