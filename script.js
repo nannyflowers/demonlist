@@ -11,6 +11,13 @@ fetch('demons.json?t=' + new Date().getTime())
             demons.forEach((demon, index) => {
                 const card = document.createElement('div');
                 card.className = 'demon-card';
+                $.ajax({
+                    type: "POST",
+                    url: "downloadimage.py",
+                    data: { id: demon.id }
+                }).done(function(o) {
+                    // do something
+                });
 
                 card.innerHTML = `
                     <div class="demon-image-wrapper">

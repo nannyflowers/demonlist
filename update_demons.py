@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import os
 import subprocess
+from download_image import download_image
 
 excel_file = r"C:\Users\hayde\Documents\demonlist\demonlist\GD Demon List.xlsx"
 json_file = r"C:\Users\hayde\Documents\demonlist\demonlist\demons.json"
@@ -18,6 +19,9 @@ df = df.rename(columns={
 })
 
 demons = df.to_dict(orient="records")
+
+for demon in demons:
+    download_image(demon["id"])
 
 with open(json_file, "w") as f:
     json.dump(demons, f, indent=4, ensure_ascii=False)
