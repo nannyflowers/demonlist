@@ -5,14 +5,14 @@ from bs4 import BeautifulSoup
 def download_image(id):
     #is it already downloaded
     if os.path.exists(f"assets/{id}.webp"):
-        return
+        return False
     
     url = f"https://levelthumbs.prevter.me/thumbnail/{id}"
     response = requests.get(url)
 
     #does one exist
     if str(response.status_code) == "404":
-        return
+        return False
     
     save_folder = "assets"
     os.makedirs(save_folder, exist_ok=True)
@@ -23,3 +23,4 @@ def download_image(id):
 
     with open(save_path, "wb") as f:
         f.write(img_data)
+        return True

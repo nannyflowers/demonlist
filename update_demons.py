@@ -19,13 +19,17 @@ df = df.rename(columns={
 })
 
 demons = df.to_dict(orient="records")
+downloaded_images = []
 
 for demon in demons:
-    download_image(demon["id"])
+    if download_image(demon["id"]):
+        downloaded_images.append(f"assets\\{demon["id"]}.webp")
 
 with open(json_file, "w") as f:
     json.dump(demons, f, indent=4, ensure_ascii=False)
 
 subprocess.run(["git", "add", json_file])
+for path in downloaded_images:
+    subprocess.run(["git", "add", path])
 subprocess.run(["git", "commit", "-m", "update list"])
 subprocess.run(["git", "push", "origin", "main"])
