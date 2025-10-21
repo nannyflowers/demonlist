@@ -654,5 +654,13 @@
         "gddlRating": 10.91,
         "attempts": 8841,
         "difficultyFace": "assets\\hard demon.png"
+    },
+    {
+        "name": "scissors",
+        "id": 68923366,
+        "enjoymentRating": 8.0,
+        "gddlRating": 12.13,
+        "attempts": 1230,
+        "difficultyFace": "assets\\hard demon.png"
     }
 ]
