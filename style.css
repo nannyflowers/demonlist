@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #1b1b2f;
     color: #f0f0f0;
 }
@@ -59,6 +59,15 @@ header h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.demon-card:hover .demon-title {
+    font-size: 1.9em;
+    /* increase size on hover */
+}
+
+.demon-card:hover .demon-image-wrapper {
+    flex: 0 0 220px;
+}
+
 .demon-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
@@ -74,6 +83,7 @@ header h1 {
     /* fixed width for image */
     height: 100%;
     overflow: hidden;
+    transition: flex 0.3s ease;
 }
 
 .demon-image {
@@ -107,6 +117,7 @@ header h1 {
     font-size: 1.8em;
     font-weight: bold;
     color: #b57edc;
+    transition: font-size 0.3s ease;
 }
 
 .header-content {
@@ -129,6 +140,7 @@ header h1 {
 .sort-menu label {
     color: #b57edc;
     font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sort-menu select {
@@ -140,6 +152,7 @@ header h1 {
     padding: 6px 10px;
     outline: none;
     transition: border-color 0.3s ease, background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sort-menu select:hover {
@@ -152,15 +165,14 @@ header h1 {
     box-shadow: 0 0 5px rgba(181, 126, 220, 0.6);
 }
 
-
-/* Bottom Info Bar */
-
 .demon-info-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     /* center horizontally */
     align-items: center;
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 10px;
     /* spacing between items */
     font-size: 1em;
     font-weight: 400;
