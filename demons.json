@@ -646,5 +646,13 @@
         "gddlRating": 2.92,
         "attempts": 575,
         "difficultyFace": "assets\\easy demon.png"
+    },
+    {
+        "name": "RGB",
+        "id": 62909889,
+        "enjoymentRating": 4.5,
+        "gddlRating": 10.91,
+        "attempts": 8841,
+        "difficultyFace": "assets\\hard demon.png"
     }
 ]
