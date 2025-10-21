@@ -14,7 +14,7 @@ fetch('demons.json?t=' + new Date().getTime())
 
                 card.innerHTML = `
                     <div class="demon-image-wrapper">
-                        <img class="demon-image" src="assets/${demon.id}.webp" alt="${demon.name}">
+                        <img class="demon-image" src="https://levelthumbs.prevter.me/thumbnail/${demon.id}" alt="${demon.name}">
                     </div>
                     <div class="demon-content">
                         <div class="demon-title">#${index + 1} - ${demon.name}</div>
