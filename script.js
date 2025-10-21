@@ -6,11 +6,31 @@ fetch('demons.json?t=' + new Date().getTime())
         // --- render function ---
         const container = document.getElementById('demon-list');
 
+
         function renderDemons() {
             container.innerHTML = '';
             demons.forEach((demon, index) => {
                 const card = document.createElement('div');
                 card.className = 'demon-card';
+
+                card.addEventListener("click", () => {
+                    navigator.clipboard.writeText(demon.id)
+                        .then(() => {
+                            const audio = new Audio("assets/achievement_01.ogg");
+                            audio.play();
+                            alert("Copied id to clipboard!")
+                        })
+                        .catch(err => {
+                            alert("Failed to copy id due to" + err)
+                        });
+                });
+
+
+                card.addEventListener("mouseenter", () => {
+                    const audio = new Audio("assets/chestClick.ogg")
+                    audio.volume = 0.02;
+                    audio.play();
+                });
 
                 card.innerHTML = `
                     <div class="demon-image-wrapper">
