@@ -32,6 +32,13 @@ fetch('demons.json?t=' + new Date().getTime())
                     audio.play();
                 });
 
+                const timestamp = new Date(demon.dateBeaten * 1000)
+                const formatted_ts = new Intl.DateTimeFormat("de-DE", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "2-digit"
+                }).format(timestamp);
+
                 card.innerHTML = `
                     <div class="demon-image-wrapper">
                         <img class="demon-image" src="https://levelthumbs.prevter.me/thumbnail/${demon.id}" alt="${demon.name}">
@@ -43,6 +50,7 @@ fetch('demons.json?t=' + new Date().getTime())
                             <span>GDDL Rating: ${demon.gddlRating}</span>
                             <span>Enjoyment: ${demon.enjoymentRating}</span>
                             <span>ID: ${demon.id}</span>
+                            <span>Date Beaten: ${formatted_ts}</span>
                         </div>
                         <img class="demon-face" src="${demon.difficultyFace}" alt="demon face">
                     </div>
@@ -51,25 +59,55 @@ fetch('demons.json?t=' + new Date().getTime())
             });
         }
 
-        function sort(sortBy) {
+        function sort(sortBy, ascending = false) {
             demons.sort((a, b) => {
+                let result;
+
                 if (typeof a[sortBy] === 'string') {
-                    return a[sortBy].localeCompare(b[sortBy]);
+                    result = a[sortBy].localeCompare(b[sortBy]);
                 } else {
-                    return b[sortBy] - a[sortBy];
+                    result = a[sortBy] - b[sortBy];
                 }
+
+                return ascending ? result : -result;
             });
+        };
+
+        function is_ascending() {
+            const sortButton = document.getElementById("sortOrder");
+            if (sortButton.textContent == "↑") {
+                return true;
+            } else {
+                return false;
+            };
         }
 
-        sort("gddlRating")
-        renderDemons(); // initial render
+        function render_with_sort(sort_val, asc = false) {
+            sort(sort_val, asc);
+            renderDemons();
+        };
+
+
+        render_with_sort("gddlRating")
 
         // --- now safe to use demons here ---
         const sortSelect = document.getElementById('sort');
         sortSelect.addEventListener('change', () => {
             const sortBy = sortSelect.value;
-            sort(sortBy)
-            renderDemons();
+            render_with_sort(sortBy, is_ascending())
+        });
+
+        const sortButton = document.getElementById("sortOrder");
+        sortButton.addEventListener("click", () => {
+            if (is_ascending()) {
+                sortButton.textContent = "↓"
+                const sortBy = sortSelect.value;
+                render_with_sort(sortBy, false)
+            } else {
+                sortButton.textContent = "↑"
+                const sortBy = sortSelect.value;
+                render_with_sort(sortBy, true)
+            };
         });
     })
     .catch(error => console.error("Error loading demons:", error));

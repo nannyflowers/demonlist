@@ -137,6 +137,29 @@ header h1 {
     color: #ffffff;
 }
 
+.sort-btn {
+    border: 2px solid #b57edc;
+    border-radius: 6px;
+    background-color: #2a2a4b;
+    color: #b57edc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0.3% 3%;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort-btn:hover {
+    border-color: #d4a9ff;
+    background-color: #353565;
+}
+
 .sort-menu label {
     color: #b57edc;
     font-weight: 600;
