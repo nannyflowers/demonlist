@@ -5,7 +5,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 2.06,
         "attempts": 226,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1688256000.0
     },
     {
         "name": "Electroman Adven v2",
@@ -13,7 +14,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 1.92,
         "attempts": 275,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1688256000.0
     },
     {
         "name": "Clubstep v2",
@@ -21,7 +23,8 @@
         "enjoymentRating": 9.0,
         "gddlRating": 6.73,
         "attempts": 1419,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1688428800.0
     },
     {
         "name": "Electrodynamix v2",
@@ -29,7 +32,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 6.59,
         "attempts": 434,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1688860800.0
     },
     {
         "name": "Hexagon Force v2",
@@ -37,7 +41,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 7.75,
         "attempts": 889,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1688947200.0
     },
     {
         "name": "ToE II v2",
@@ -45,7 +50,8 @@
         "enjoymentRating": 7.0,
         "gddlRating": 11.66,
         "attempts": 3760,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1689206400.0
     },
     {
         "name": "Nine Circles",
@@ -53,7 +59,8 @@
         "enjoymentRating": 7.0,
         "gddlRating": 11.19,
         "attempts": 7295,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1690502400.0
     },
     {
         "name": "Verity",
@@ -61,7 +68,8 @@
         "enjoymentRating": 5.0,
         "gddlRating": 6.89,
         "attempts": 3976,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1691712000.0
     },
     {
         "name": "Sakupen Egg",
@@ -69,7 +77,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 7.11,
         "attempts": 2234,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1691884800.0
     },
     {
         "name": "Biru",
@@ -77,7 +86,8 @@
         "enjoymentRating": 3.0,
         "gddlRating": 9.72,
         "attempts": 2640,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1691971200.0
     },
     {
         "name": "The Lightning Road",
@@ -85,7 +95,8 @@
         "enjoymentRating": 7.0,
         "gddlRating": 1.03,
         "attempts": 300,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1692748800.0
     },
     {
         "name": "Virtualization",
@@ -93,7 +104,8 @@
         "enjoymentRating": 9.0,
         "gddlRating": 2.8,
         "attempts": 452,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1693008000.0
     },
     {
         "name": "Mirror Force",
@@ -101,7 +113,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 2.09,
         "attempts": 191,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1693526400.0
     },
     {
         "name": "Dance Massacre",
@@ -109,7 +122,8 @@
         "enjoymentRating": 6.0,
         "gddlRating": 12.77,
         "attempts": 5705,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1694908800.0
     },
     {
         "name": "White Women",
@@ -117,7 +131,8 @@
         "enjoymentRating": 9.5,
         "gddlRating": 10.75,
         "attempts": 1854,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1695427200.0
     },
     {
         "name": "The Farewell",
@@ -125,7 +140,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 1.69,
         "attempts": 24,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1698105600.0
     },
     {
         "name": "Future Funk",
@@ -133,7 +149,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 12.86,
         "attempts": 2789,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1698192000.0
     },
     {
         "name": "Change of Scene",
@@ -141,7 +158,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 2.89,
         "attempts": 315,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1698364800.0
     },
     {
         "name": "iSpyWithMyLittleEye",
@@ -149,7 +167,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 1.76,
         "attempts": 200,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1698364800.0
     },
     {
         "name": "Demon Park",
@@ -157,7 +176,8 @@
         "enjoymentRating": 4.0,
         "gddlRating": 2.81,
         "attempts": 597,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1698883200.0
     },
     {
         "name": "Acropolis",
@@ -165,7 +185,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 17.26,
         "attempts": 18022,
-        "difficultyFace": "assets\\insane demon.png"
+        "difficultyFace": "assets\\insane demon.png",
+        "dateBeaten": 1701043200.0
     },
     {
         "name": "Supersonic",
@@ -173,7 +194,8 @@
         "enjoymentRating": 4.0,
         "gddlRating": 16.8,
         "attempts": 14825,
-        "difficultyFace": "assets\\insane demon.png"
+        "difficultyFace": "assets\\insane demon.png",
+        "dateBeaten": 1707004800.0
     },
     {
         "name": "Collapse",
@@ -181,7 +203,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 4.81,
         "attempts": 908,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1707609600.0
     },
     {
         "name": "Section",
@@ -189,7 +212,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 6.36,
         "attempts": 2235,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1709424000.0
     },
     {
         "name": "Invisible Clubstep",
@@ -197,7 +221,8 @@
         "enjoymentRating": 7.0,
         "gddlRating": 2.59,
         "attempts": 53,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1709769600.0
     },
     {
         "name": "I Made This 4 Fun",
@@ -205,7 +230,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 1.09,
         "attempts": 32,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1710633600.0
     },
     {
         "name": "Still A Way",
@@ -213,7 +239,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 3.41,
         "attempts": 354,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1710979200.0
     },
     {
         "name": "Rusted World",
@@ -221,7 +248,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 2.85,
         "attempts": 295,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1711584000.0
     },
     {
         "name": "Warehouse",
@@ -229,7 +257,8 @@
         "enjoymentRating": 5.0,
         "gddlRating": 2.72,
         "attempts": 171,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1711584000.0
     },
     {
         "name": "Blindfolder",
@@ -237,7 +266,8 @@
         "enjoymentRating": 7.0,
         "gddlRating": 1.08,
         "attempts": 35,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1712620800.0
     },
     {
         "name": "Mechanical Showdown",
@@ -245,7 +275,8 @@
         "enjoymentRating": 4.0,
         "gddlRating": 6.87,
         "attempts": 424,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1712620800.0
     },
     {
         "name": "Silent ClubX Rebirth",
@@ -253,7 +284,8 @@
         "enjoymentRating": 9.0,
         "gddlRating": 6.82,
         "attempts": 990,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1712707200.0
     },
     {
         "name": "Reanimation",
@@ -261,7 +293,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 6.81,
         "attempts": 921,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1712707200.0
     },
     {
         "name": "8o",
@@ -269,7 +302,8 @@
         "enjoymentRating": 4.5,
         "gddlRating": 16.83,
         "attempts": 14457,
-        "difficultyFace": "assets\\insane demon.png"
+        "difficultyFace": "assets\\insane demon.png",
+        "dateBeaten": 1713139200.0
     },
     {
         "name": "To the Grave",
@@ -277,7 +311,8 @@
         "enjoymentRating": 5.5,
         "gddlRating": 3.84,
         "attempts": 609,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1713398400.0
     },
     {
         "name": "Sidestep",
@@ -285,7 +320,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 5.26,
         "attempts": 938,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1726963200.0
     },
     {
         "name": "Traction",
@@ -293,7 +329,8 @@
         "enjoymentRating": 5.0,
         "gddlRating": 4.14,
         "attempts": 350,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1726963200.0
     },
     {
         "name": "STARPUNK",
@@ -301,7 +338,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 1.29,
         "attempts": 201,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729468800.0
     },
     {
         "name": "Ratio Circles",
@@ -309,7 +347,8 @@
         "enjoymentRating": 6.0,
         "gddlRating": 2.32,
         "attempts": 254,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729468800.0
     },
     {
         "name": "Anasthasia",
@@ -317,7 +356,8 @@
         "enjoymentRating": 7.0,
         "gddlRating": 1.72,
         "attempts": 171,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729555200.0
     },
     {
         "name": "Raven",
@@ -325,7 +365,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 2.09,
         "attempts": 207,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729641600.0
     },
     {
         "name": "Star Road",
@@ -333,7 +374,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 1.79,
         "attempts": 133,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729641600.0
     },
     {
         "name": "Voyager",
@@ -341,7 +383,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 3.02,
         "attempts": 295,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729641600.0
     },
     {
         "name": "Chromatique",
@@ -349,7 +392,8 @@
         "enjoymentRating": 9.0,
         "gddlRating": 3.3,
         "attempts": 266,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729641600.0
     },
     {
         "name": "Zircon",
@@ -357,7 +401,8 @@
         "enjoymentRating": 3.0,
         "gddlRating": 3.72,
         "attempts": 528,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729641600.0
     },
     {
         "name": "Common s3nse",
@@ -365,7 +410,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 1.92,
         "attempts": 215,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729641600.0
     },
     {
         "name": "Bass Knight",
@@ -373,7 +419,8 @@
         "enjoymentRating": 6.0,
         "gddlRating": 2.56,
         "attempts": 237,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729728000.0
     },
     {
         "name": "NTTE",
@@ -381,7 +428,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 2.75,
         "attempts": 251,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729728000.0
     },
     {
         "name": "Buried Angel",
@@ -389,7 +437,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 2.86,
         "attempts": 175,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729728000.0
     },
     {
         "name": "Weird",
@@ -397,7 +446,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 1.84,
         "attempts": 172,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729728000.0
     },
     {
         "name": "ClutterX",
@@ -405,7 +455,8 @@
         "enjoymentRating": 6.5,
         "gddlRating": 3.81,
         "attempts": 336,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729814400.0
     },
     {
         "name": "Death Moon",
@@ -413,7 +464,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 3.72,
         "attempts": 628,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729814400.0
     },
     {
         "name": "Cosmic Rush",
@@ -421,7 +473,8 @@
         "enjoymentRating": 7.0,
         "gddlRating": 3.05,
         "attempts": 219,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729900800.0
     },
     {
         "name": "Lucy",
@@ -429,7 +482,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 4.53,
         "attempts": 254,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1729900800.0
     },
     {
         "name": "Motion",
@@ -437,7 +491,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 3.75,
         "attempts": 229,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729900800.0
     },
     {
         "name": "Wowzers Holy",
@@ -445,7 +500,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 4.72,
         "attempts": 412,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729900800.0
     },
     {
         "name": "Fast N Spicy",
@@ -453,7 +509,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 4.46,
         "attempts": 1381,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729987200.0
     },
     {
         "name": "Bloudeleuste",
@@ -461,7 +518,8 @@
         "enjoymentRating": 6.0,
         "gddlRating": 5.37,
         "attempts": 786,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1729987200.0
     },
     {
         "name": "Color Crusher",
@@ -469,7 +527,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 6.91,
         "attempts": 1599,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1730073600.0
     },
     {
         "name": "Fratura",
@@ -477,7 +536,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 6.8,
         "attempts": 1171,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1730246400.0
     },
     {
         "name": "Red Dart",
@@ -485,7 +545,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 7.16,
         "attempts": 1104,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1730332800.0
     },
     {
         "name": "Scarlet Smog",
@@ -493,7 +554,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 7.85,
         "attempts": 694,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1730419200.0
     },
     {
         "name": "Broken Reality",
@@ -501,7 +563,8 @@
         "enjoymentRating": 7.0,
         "gddlRating": 7.19,
         "attempts": 2073,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1730678400.0
     },
     {
         "name": "Speed of Light II",
@@ -509,7 +572,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 6.1,
         "attempts": 346,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1730678400.0
     },
     {
         "name": "Well Rested",
@@ -517,7 +581,8 @@
         "enjoymentRating": 1.0,
         "gddlRating": 6.8,
         "attempts": 628,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1731196800.0
     },
     {
         "name": "Gy",
@@ -525,7 +590,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 7.74,
         "attempts": 1017,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1731369600.0
     },
     {
         "name": "Tengu Wind",
@@ -533,7 +599,8 @@
         "enjoymentRating": 6.5,
         "gddlRating": 7.26,
         "attempts": 798,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1731715200.0
     },
     {
         "name": "Cant Let Vulc",
@@ -541,7 +608,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 6.4,
         "attempts": 1437,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1731888000.0
     },
     {
         "name": "Hellcat",
@@ -549,7 +617,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 7.88,
         "attempts": 1018,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1731974400.0
     },
     {
         "name": "CraZy",
@@ -557,7 +626,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 13.19,
         "attempts": 2201,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1732233600.0
     },
     {
         "name": "Citadel",
@@ -565,7 +635,8 @@
         "enjoymentRating": 5.0,
         "gddlRating": 3.3,
         "attempts": 340,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1732320000.0
     },
     {
         "name": "Based",
@@ -573,7 +644,8 @@
         "enjoymentRating": 6.0,
         "gddlRating": 7.77,
         "attempts": 501,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1732320000.0
     },
     {
         "name": "Nitrogen",
@@ -581,7 +653,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 8.16,
         "attempts": 916,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1732406400.0
     },
     {
         "name": "HeLL",
@@ -589,7 +662,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 8.19,
         "attempts": 553,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1732406400.0
     },
     {
         "name": "Resurrection",
@@ -597,7 +671,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 9.82,
         "attempts": 2788,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1732924800.0
     },
     {
         "name": "Crisis Complex",
@@ -605,7 +680,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 10.41,
         "attempts": 1632,
-        "difficultyFace": "assets\\medium demon.png"
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1733011200.0
     },
     {
         "name": "in rainbows",
@@ -613,7 +689,8 @@
         "enjoymentRating": 8.5,
         "gddlRating": 11.83,
         "attempts": 1957,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1733011200.0
     },
     {
         "name": "NODE",
@@ -621,7 +698,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 4.59,
         "attempts": 439,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1737244800.0
     },
     {
         "name": "Grey Trap",
@@ -629,7 +707,8 @@
         "enjoymentRating": 7.5,
         "gddlRating": 10.39,
         "attempts": 1775,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1744243200.0
     },
     {
         "name": "ThermoDynamix",
@@ -637,7 +716,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 11.94,
         "attempts": 3376,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1744416000.0
     },
     {
         "name": "Space Circles",
@@ -645,7 +725,8 @@
         "enjoymentRating": 8.0,
         "gddlRating": 2.92,
         "attempts": 575,
-        "difficultyFace": "assets\\easy demon.png"
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1757808000.0
     },
     {
         "name": "RGB",
@@ -653,7 +734,8 @@
         "enjoymentRating": 4.5,
         "gddlRating": 10.91,
         "attempts": 8841,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1761004800.0
     },
     {
         "name": "scissors",
@@ -661,6 +743,7 @@
         "enjoymentRating": 8.0,
         "gddlRating": 12.13,
         "attempts": 1230,
-        "difficultyFace": "assets\\hard demon.png"
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1761091200.0
     }
 ]
