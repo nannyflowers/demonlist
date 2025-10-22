@@ -16,7 +16,7 @@ fetch('demons.json?t=' + new Date().getTime())
                 card.addEventListener("click", () => {
                     navigator.clipboard.writeText(demon.id)
                         .then(() => {
-                            const audio = new Audio("assets/achievement_01.ogg");
+                            const audio = new Audio("assets/copy_id.ogg");
                             audio.play();
                             alert("Copied id to clipboard!")
                         })
@@ -27,7 +27,7 @@ fetch('demons.json?t=' + new Date().getTime())
 
 
                 card.addEventListener("mouseenter", () => {
-                    const audio = new Audio("assets/chestClick.ogg")
+                    const audio = new Audio("assets/hover_click.ogg")
                     audio.volume = 0.02;
                     audio.play();
                 });
