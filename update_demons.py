@@ -24,8 +24,6 @@ demons = df.to_dict(orient="records")
 for demon in demons:
     demon["dateBeaten"] = demon["dateBeaten"].timestamp()
 
-print(demons)
-
 with open(json_file, "w") as f:
     json.dump(demons, f, indent=4, ensure_ascii=False)
 
