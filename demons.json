@@ -754,5 +754,14 @@
         "attempts": 2572,
         "difficultyFace": "assets\\hard demon.png",
         "dateBeaten": 1761264000.0
+    },
+    {
+        "name": "Dear Nostalgists",
+        "id": 18735780,
+        "enjoymentRating": 7.5,
+        "gddlRating": 3.19,
+        "attempts": 453,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1761264000.0
     }
 ]
