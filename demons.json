@@ -745,5 +745,14 @@
         "attempts": 1230,
         "difficultyFace": "assets\\hard demon.png",
         "dateBeaten": 1761091200.0
+    },
+    {
+        "name": "Coarse",
+        "id": 44319716,
+        "enjoymentRating": 8.0,
+        "gddlRating": 11.8,
+        "attempts": 2572,
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1761264000.0
     }
 ]
