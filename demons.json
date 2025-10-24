@@ -763,5 +763,14 @@
         "attempts": 453,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1761264000.0
+    },
+    {
+        "name": "Temple of Time",
+        "id": 68408784,
+        "enjoymentRating": 8.5,
+        "gddlRating": 11.19,
+        "attempts": 1259,
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1761350400.0
     }
 ]
