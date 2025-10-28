@@ -772,5 +772,14 @@
         "attempts": 1259,
         "difficultyFace": "assets\\hard demon.png",
         "dateBeaten": 1761350400.0
+    },
+    {
+        "name": "pxttxrn sxxkxr",
+        "id": 81391957,
+        "enjoymentRating": 8.0,
+        "gddlRating": 2.04,
+        "attempts": 88,
+        "difficultyFace": NaN,
+        "dateBeaten": 1761609600.0
     }
 ]
