@@ -779,7 +779,7 @@
         "enjoymentRating": 8.0,
         "gddlRating": 2.04,
         "attempts": 88,
-        "difficultyFace": NaN,
+        "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1761609600.0
     }
 ]
