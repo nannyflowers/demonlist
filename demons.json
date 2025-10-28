@@ -781,5 +781,14 @@
         "attempts": 88,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1761609600.0
+    },
+    {
+        "name": "Jawbreaker",
+        "id": 6939821,
+        "enjoymentRating": 5.5,
+        "gddlRating": 11.14,
+        "attempts": 3273,
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1761609600.0
     }
 ]
