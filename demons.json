@@ -790,5 +790,14 @@
         "attempts": 3273,
         "difficultyFace": "assets\\hard demon.png",
         "dateBeaten": 1761609600.0
+    },
+    {
+        "name": "White Space",
+        "id": 77292103,
+        "enjoymentRating": 6.5,
+        "gddlRating": 2.89,
+        "attempts": 165,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1761782400.0
     }
 ]
