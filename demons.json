@@ -799,5 +799,14 @@
         "attempts": 165,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1761782400.0
+    },
+    {
+        "name": "Trump Circles",
+        "id": 26245696,
+        "enjoymentRating": 7.0,
+        "gddlRating": 3.81,
+        "attempts": 342,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1761868800.0
     }
 ]
