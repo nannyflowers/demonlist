@@ -817,5 +817,14 @@
         "attempts": 219,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1761955200.0
+    },
+    {
+        "name": "Forest Temple",
+        "id": 11402965,
+        "enjoymentRating": 7.5,
+        "gddlRating": 14.0,
+        "attempts": 5791,
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1761955200.0
     }
 ]
