@@ -808,5 +808,14 @@
         "attempts": 342,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1761868800.0
+    },
+    {
+        "name": "Ultra Paracosm",
+        "id": 11588490,
+        "enjoymentRating": 7.5,
+        "gddlRating": 1.99,
+        "attempts": 219,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1761955200.0
     }
 ]
