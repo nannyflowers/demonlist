@@ -826,5 +826,14 @@
         "attempts": 5791,
         "difficultyFace": "assets\\hard demon.png",
         "dateBeaten": 1761955200.0
+    },
+    {
+        "name": "Stalemate",
+        "id": 4545425,
+        "enjoymentRating": 7.0,
+        "gddlRating": 15.22,
+        "attempts": 6036,
+        "difficultyFace": "assets\\insane demon.png",
+        "dateBeaten": 1762732800.0
     }
 ]
