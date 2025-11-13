@@ -835,5 +835,14 @@
         "attempts": 6036,
         "difficultyFace": "assets\\insane demon.png",
         "dateBeaten": 1762732800.0
+    },
+    {
+        "name": "Fairydust",
+        "id": 5310094,
+        "enjoymentRating": 5.5,
+        "gddlRating": 13.79,
+        "attempts": 2259,
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1762992000.0
     }
 ]
