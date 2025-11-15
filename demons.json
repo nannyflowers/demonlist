@@ -844,5 +844,14 @@
         "attempts": 2259,
         "difficultyFace": "assets\\hard demon.png",
         "dateBeaten": 1762992000.0
+    },
+    {
+        "name": "Shiver",
+        "id": 56210242,
+        "enjoymentRating": 7.0,
+        "gddlRating": 1.11,
+        "attempts": 117,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1763164800.0
     }
 ]
