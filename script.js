@@ -1,5 +1,3 @@
-const PASS = $ { env: PASSWORD };
-
 fetch('demons.json?t=' + new Date().getTime())
     .then(response => response.json())
     .then(demons => {
