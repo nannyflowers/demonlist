@@ -862,5 +862,14 @@
         "attempts": 122,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1763337600.0
+    },
+    {
+        "name": "respite",
+        "id": 76070513,
+        "enjoymentRating": 6.5,
+        "gddlRating": 1.9,
+        "attempts": 104,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1763596800.0
     }
 ]
