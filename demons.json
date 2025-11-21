@@ -871,5 +871,14 @@
         "attempts": 104,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1763596800.0
+    },
+    {
+        "name": "Sea Hunter",
+        "id": 111558838,
+        "enjoymentRating": 7.5,
+        "gddlRating": 1.03,
+        "attempts": 20,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1763683200.0
     }
 ]
