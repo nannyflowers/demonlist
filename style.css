@@ -139,6 +139,19 @@ header h1 {
     color: #ffffff;
 }
 
+.date-input {
+    display: flex;
+    border: 2px solid #b57edc;
+    background-color: #2a2a4b;
+    color: #b57edc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 1%;
+    border-radius: 6px;
+    line-height: 1;
+    justify-content: left;
+}
+
 .sort-btn {
     border: 2px solid #b57edc;
     border-radius: 6px;
