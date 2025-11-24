@@ -880,5 +880,14 @@
         "attempts": 20,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1763683200.0
+    },
+    {
+        "name": "Laser Room",
+        "id": 1777565,
+        "enjoymentRating": 8.0,
+        "gddlRating": 2.91,
+        "attempts": 179,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1763942400.0
     }
 ]
