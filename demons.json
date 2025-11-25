@@ -889,5 +889,14 @@
         "attempts": 179,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1763942400.0
+    },
+    {
+        "name": "Fractured Circles",
+        "id": 8418966,
+        "enjoymentRating": 3.5,
+        "gddlRating": 6.75,
+        "attempts": 843,
+        "difficultyFace": "assets\\medium demon.png",
+        "dateBeaten": 1764028800.0
     }
 ]
