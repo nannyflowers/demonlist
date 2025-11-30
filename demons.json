@@ -898,5 +898,14 @@
         "attempts": 843,
         "difficultyFace": "assets\\medium demon.png",
         "dateBeaten": 1764028800.0
+    },
+    {
+        "name": "Sonic Wave Unlimited",
+        "id": 102265892,
+        "enjoymentRating": 7.0,
+        "gddlRating": 17.95,
+        "attempts": 11392,
+        "difficultyFace": "assets\\insane demon.png",
+        "dateBeaten": 1764460800.0
     }
 ]
