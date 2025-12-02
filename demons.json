@@ -907,5 +907,14 @@
         "attempts": 11392,
         "difficultyFace": "assets\\insane demon.png",
         "dateBeaten": 1764460800.0
+    },
+    {
+        "name": "Theory of FirePower",
+        "id": 4115525,
+        "enjoymentRating": 6.5,
+        "gddlRating": 13.19,
+        "attempts": 3149,
+        "difficultyFace": "assets\\hard demon.png",
+        "dateBeaten": 1764633600.0
     }
 ]
