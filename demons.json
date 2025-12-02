@@ -916,5 +916,14 @@
         "attempts": 3149,
         "difficultyFace": "assets\\hard demon.png",
         "dateBeaten": 1764633600.0
+    },
+    {
+        "name": "The Robotic Rush",
+        "id": 11202046,
+        "enjoymentRating": 7.0,
+        "gddlRating": 3.75,
+        "attempts": 192,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1764633600.0
     }
 ]
