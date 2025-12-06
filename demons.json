@@ -943,5 +943,14 @@
         "attempts": 148,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1764979200.0
+    },
+    {
+        "name": "Toxic Lab II",
+        "id": 8469744,
+        "enjoymentRating": 6.5,
+        "gddlRating": 3.78,
+        "attempts": 388,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1764979200.0
     }
 ]
