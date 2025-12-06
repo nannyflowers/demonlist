@@ -925,5 +925,14 @@
         "attempts": 192,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1764633600.0
+    },
+    {
+        "name": "Gumshot",
+        "id": 75806677,
+        "enjoymentRating": 9.0,
+        "gddlRating": 17.67,
+        "attempts": 2684,
+        "difficultyFace": "assets\\insane demon.png",
+        "dateBeaten": 1764979200.0
     }
 ]
