@@ -934,5 +934,14 @@
         "attempts": 2684,
         "difficultyFace": "assets\\insane demon.png",
         "dateBeaten": 1764979200.0
+    },
+    {
+        "name": "Dark Hell",
+        "id": 11203686,
+        "enjoymentRating": 8.0,
+        "gddlRating": 3.72,
+        "attempts": 148,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1764979200.0
     }
 ]
