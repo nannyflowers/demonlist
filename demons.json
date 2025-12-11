@@ -952,5 +952,14 @@
         "attempts": 388,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1764979200.0
+    },
+    {
+        "name": "The End is Here",
+        "id": 126657080,
+        "enjoymentRating": 8.0,
+        "gddlRating": 19.15,
+        "attempts": "4061+15",
+        "difficultyFace": "assets\\insane demon.png",
+        "dateBeaten": 1765411200.0
     }
 ]
