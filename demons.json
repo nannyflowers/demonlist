@@ -961,5 +961,14 @@
         "attempts": 4076,
         "difficultyFace": "assets\\insane demon.png",
         "dateBeaten": 1765411200.0
+    },
+    {
+        "name": "Permafrost Mountain",
+        "id": 80790301,
+        "enjoymentRating": 6.0,
+        "gddlRating": 1.59,
+        "attempts": 53,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1765670400.0
     }
 ]
