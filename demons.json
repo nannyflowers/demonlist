@@ -970,5 +970,14 @@
         "attempts": 53,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1765670400.0
+    },
+    {
+        "name": "Espionage",
+        "id": 74639177,
+        "enjoymentRating": 6.5,
+        "gddlRating": 1.79,
+        "attempts": 95,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1765756800.0
     }
 ]
