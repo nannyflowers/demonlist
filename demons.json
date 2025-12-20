@@ -979,5 +979,14 @@
         "attempts": 95,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1765756800.0
+    },
+    {
+        "name": "Blender",
+        "id": 11724995,
+        "enjoymentRating": 7.0,
+        "gddlRating": 5.18,
+        "attempts": 456,
+        "difficultyFace": "assets\\easy demon.png",
+        "dateBeaten": 1766188800.0
     }
 ]
