@@ -988,5 +988,14 @@
         "attempts": 456,
         "difficultyFace": "assets\\easy demon.png",
         "dateBeaten": 1766188800.0
+    },
+    {
+        "name": "CraZy III",
+        "id": 73725400,
+        "enjoymentRating": 4.5,
+        "gddlRating": 19.07,
+        "attempts": 8391,
+        "difficultyFace": "assets\\insane demon.png",
+        "dateBeaten": 1766620800.0
     }
 ]
