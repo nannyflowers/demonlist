@@ -997,5 +997,14 @@
         "attempts": 8391,
         "difficultyFace": "assets\\insane demon.png",
         "dateBeaten": 1766620800.0
+    },
+    {
+        "name": "Magma Bound",
+        "id": 56568010,
+        "enjoymentRating": 8.0,
+        "gddlRating": 15.74,
+        "attempts": 1350,
+        "difficultyFace": "assets\\insane demon.png",
+        "dateBeaten": 1772999108.0
     }
 ]
