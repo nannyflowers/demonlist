@@ -23,7 +23,6 @@ header h1 {
     /* purple accent */
 }
 
-
 /* ========================
    Demon List Container
    ======================== */
@@ -175,6 +174,24 @@ header h1 {
     background-color: #353565;
 }
 
+.submit-demon-button {
+    border: 2px solid #b57edc;
+    border-radius: 6px;
+    background-color: #2a2a4b;
+    color: #b57edc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0.3% 3%;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .sort-menu label {
     color: #b57edc;
     font-weight: 600;
@@ -251,4 +268,72 @@ header h1 {
 
 #demon-list::-webkit-scrollbar-track {
     background: #1b1b2f;
+}
+
+/* Modal overlay */
+#form-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+#add-demon-form {
+    background-color: #2a2a4b;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    max-width: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form header */
+#add-demon-form h2 {
+    color: #b57edc;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+#add-demon-form input {
+    background-color: #2a2a4b;
+    border: 2px solid #b57edc;
+    border-radius: 6px;
+    color: #b57edc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 6px 10px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#add-demon-form input:hover,
+#add-demon-form input:focus {
+    border-color: #d4a9ff;
+    box-shadow: 0 0 5px rgba(181, 126, 220, 0.6);
+}
+
+/* Form buttons container */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.75em;
+}
+
+/* Cancel button styling */
+.cancel-btn {
+    background-color: #353565;
+    border-color: #b57edc;
 }

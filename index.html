@@ -17,14 +17,15 @@
         <div class="header-content">
             <h1>Platinum's Demonlist</h1>
 
+            <button id="open-form-btn" class="submit-demon-button">Submit Demon</button>
             <div id="controls" class="sort-menu">
                 <input type="date" value="" class="date-input" id="date-input">
                 <label for="sort">Sort by:</label>
                 <select id="sort">
-                    <option value="gddlRating">GDDL Rating</option>
-                    <option value="enjoymentRating">Enjoyment</option>
+                    <option value="gddl_rating">GDDL Rating</option>
+                    <option value="enjoyment">Enjoyment</option>
                     <option value="attempts">Attempts</option>
-                    <option value="dateBeaten">Date Beaten</option>
+                    <option value="date_beaten">Date Beaten</option>
                 </select>
                 <button id="sort-order" class="sort-btn" title="Toggle ascending/descending">↓</button>
             </div>
@@ -34,9 +35,40 @@
 
     <main>
         <div id="demon-list"></div>
+        <div id="form-overlay" style="display: none;">
+            <div id="add-demon-form">
+                <h2>Add a New Demon</h2>
+
+                <label for="demon-name">Demon Name</label>
+                <input id="demon-name" type="text" placeholder="Enter demon name">
+
+                <label for="level-id">Level ID</label>
+                <input id="level-id" type="text" placeholder="Enter level ID">
+
+                <label for="difficulty">Difficulty</label>
+                <input id="difficulty" type="text" placeholder="Enter demon difficulty">
+
+                <label for="attempts">Attempts</label>
+                <input id="attempts" type="number" placeholder="Number of attempts">
+
+                <label for="gddl-rating">GDDL Rating</label>
+                <input id="gddl-rating" type="number" step="0.1" placeholder="GDDL rating">
+
+                <label for="enjoyment">Enjoyment</label>
+                <input id="enjoyment" type="number" step="0.1" placeholder="Enjoyment rating">
+
+                <label for="date-beaten">Date Beaten</label>
+                <input id="date-beaten" type="date">
+
+                <div class="form-buttons">
+                    <button id="submit-demon" class="submit-demon-button">Submit</button>
+                    <button id="cancel-demon" class="submit-demon-button cancel-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

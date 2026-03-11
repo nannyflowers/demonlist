@@ -1,26 +1,35 @@
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2"
+
+const supabase = createClient(
+    "https://eazorqumetqreonpmoer.supabase.co",
+    "sb_publishable_z41ao2XbtE-Vmom8Ew2dWg_MEqB3ZQR"
+)
+
 let demons = []
 let state = {
-    sort_by: "gddlRating",
+    sort_by: "gddl_rating",
     ascending: false,
     date: new Date(),
 };
 
-function seconds_to_date(seconds) {
-    return new Date(seconds * 1000)
-};
+function string_to_date(string) {
+    return new Date(string)
+}
 
 function filter_by_date(list, cutoff) {
-    return list.filter(demon => seconds_to_date(demon.dateBeaten) <= cutoff)
+    return list.filter(demon => string_to_date(demon.date_beaten) <= cutoff)
 };
 
 function sort_demons(list, sort_by, asc) {
     return [...list].sort((a, b) => {
         let result;
 
-        if (typeof a[sort_by] == "string") {
-            result = a[sort_by].localeCompare(b[sort_by])
+        if (["gddl_rating","attempts","enjoyment"].includes(sort_by)) {
+            result = Number(a[sort_by]) - Number(b[sort_by]);
+        } else if (sort_by === "date_beaten") {
+            result = new Date(a[sort_by]) - new Date(b[sort_by]);
         } else {
-            result = a[sort_by] - b[sort_by]
+            result = String(a[sort_by]).localeCompare(String(b[sort_by]));
         }
 
         return asc ? result : -result
@@ -43,22 +52,36 @@ function create_demon_card(demon, index) {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit"
-    }).format(seconds_to_date(demon.dateBeaten));
+    }).format(string_to_date(demon.date_beaten));
+
+    var difficulty_face
+
+    if (demon.difficulty == "EASY") {
+        difficulty_face = "assets/easy demon.png"
+    } else if (demon.difficulty == "MEDIUM") {
+        difficulty_face = "assets/medium demon.png"
+    } else if (demon.difficulty == "HARD") {
+        difficulty_face = "assets/hard demon.png"
+    } else if (demon.difficulty == "INSANE") {
+        difficulty_face = "assets/insane demon.png"
+    } else {
+        difficulty_face = "assets/extreme demon.png"
+    }
 
     card.innerHTML = `
         <div class="demon-image-wrapper">
-            <img class="demon-image" src="https://levelthumbs.prevter.me/thumbnail/${demon.id}" alt="${demon.name}">
+            <img class="demon-image" src="https://levelthumbs.prevter.me/thumbnail/${demon.level_id}" alt="${demon.name}">
         </div>
         <div class="demon-content">
             <div class="demon-title">#${index} - ${demon.name}</div>
             <div class="demon-info-bar">
                 <span>Attempts: ${demon.attempts}</span>
-                <span>GDDL Rating: ${demon.gddlRating}</span>
-                <span>Enjoyment: ${demon.enjoymentRating}</span>
-                <span>ID: ${demon.id}</span>
+                <span>GDDL Rating: ${demon.gddl_rating}</span>
+                <span>Enjoyment: ${demon.enjoyment}</span>
+                <span>ID: ${demon.level_id}</span>
                 <span>Date Beaten: ${formatted_date}</span>
             </div>
-            <img class="demon-face" src="${demon.difficultyFace}" alt="demon face">
+            <img class="demon-face" src="${difficulty_face}" alt="demon face">
         </div>
     `;
 
@@ -105,150 +128,85 @@ function setup_events() {
     })
 }
 
-fetch(`demons.json?t=${Date.now()}`)
-    .then(res => res.json())
-    .then(data => {
-        demons = data;
-        setup_events();
-        render();
-    });
+async function load_demons() {
+    const {data, error} = await supabase
+        .from("demons")
+        .select("*")
+    
+    console.log("DATA:", data);
+    console.log("ERROR:", error);
+    
+    if (error) {
+        console.error("Error loading demons:", error);
+        return;
+    }
 
-// const date_input = document.getElementById("date-input")
-// date_input.valueAsDate = new Date();
+    demons = data
 
-// fetch('demons.json?t=' + new Date().getTime())
-//     .then(response => response.json())
-//     .then(demons => {
-//         console.log(demons);
+    setup_events();
+    render();
+}
 
-//         // --- render function ---
-//         const container = document.getElementById('demon-list');
+load_demons();
 
+const openFormBtn = document.getElementById("open-form-btn");
+const formOverlay = document.getElementById("form-overlay");
+const cancelBtn = document.getElementById("cancel-demon");
+const submit_demon_button = document.getElementById("submit-demon")
 
-//         function renderDemons(simulated_date) {
-//             container.innerHTML = '';
-//             var index = 1
-//             demons.forEach((demon) => {
+// Open modal
+openFormBtn.addEventListener("click", () => {
+    formOverlay.style.display = "flex";
+});
 
-//                 const time_since_epoch = new Date(demon.dateBeaten).getTime() * 1000;
-//                 const simulated_time = simulated_date.getTime();
+// Close modal
+cancelBtn.addEventListener("click", () => {
+    formOverlay.style.display = "none";
+});
 
-//                 if (time_since_epoch > simulated_time) {
-//                     return
-//                 }
+// Optional: close when clicking outside form
+formOverlay.addEventListener("click", (e) => {
+    if (e.target === formOverlay) {
+        formOverlay.style.display = "none";
+    }
+});
 
-//                 const card = document.createElement('div');
-//                 card.className = 'demon-card';
+submit_demon_button.addEventListener("click", () => {
+    async function add_demon() {
+        const name = document.getElementById("demon-name").value
+        const level_id = document.getElementById("level-id").value
+        const gddl_rating = document.getElementById("gddl-rating").value
+        const attempts = document.getElementById("attempts").value
+        const enjoyment = document.getElementById("enjoyment").value
+        const date_beaten = document.getElementById("date-beaten").value
+        const difficulty = document.getElementById("difficulty").value.toUpperCase();
 
-//                 card.addEventListener("click", () => {
-//                     navigator.clipboard.writeText(demon.id)
-//                         .then(() => {
-//                             const audio = new Audio("assets/copy_id.ogg");
-//                             audio.play();
-//                             alert("Copied id to clipboard!")
-//                         })
-//                         .catch(err => {
-//                             alert("Failed to copy id due to" + err)
-//                         });
-//                 });
+        const demon = {
+            name,
+            level_id,
+            gddl_rating,
+            attempts,
+            enjoyment,
+            date_beaten,
+            difficulty
+        }
 
-//                 const timestamp = new Date(demon.dateBeaten * 1000)
-//                 const formatted_ts = new Intl.DateTimeFormat("de-DE", {
-//                     day: "2-digit",
-//                     month: "2-digit",
-//                     year: "2-digit"
-//                 }).format(timestamp);
+        const password = prompt("Enter password:")
 
-//                 card.addEventListener("mouseenter", () => {
-//                     const audio = new Audio("assets/hover_click.ogg")
-//                     audio.volume = 0.02;
-//                     audio.play();
-//                 });
+        const res = await fetch("https://dbworker.hayden-nundy-28.workers.dev/", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({password, demon})
+        })
 
-//                 card.innerHTML = `
-//                     <div class="demon-image-wrapper">
-//                         <img class="demon-image" src="https://levelthumbs.prevter.me/thumbnail/${demon.id}" alt="${demon.name}">
-//                     </div>
-//                     <div class="demon-content">
-//                         <div class="demon-title">#${index} - ${demon.name}</div>
-//                         <div class="demon-info-bar">
-//                             <span>Attempts: ${demon.attempts}</span>
-//                             <span>GDDL Rating: ${demon.gddlRating}</span>
-//                             <span>Enjoyment: ${demon.enjoymentRating}</span>
-//                             <span>ID: ${demon.id}</span>
-//                             <span>Date Beaten: ${formatted_ts}</span>
-//                         </div>
-//                         <img class="demon-face" src="${demon.difficultyFace}" alt="demon face">
-//                     </div>
-//                 `;
-//                 container.appendChild(card);
-//                 index += 1
-//             });
-//         }
+        const result = await res.json()
+        if (result.success) {
+            alert("Demon added!")
+            formOverlay.style.display = "none";
+        } else {
+            alert("Failed: " + JSON.stringify(result))
+        }
+    }
 
-//         function sort(sortBy, ascending = false) {
-//             demons.sort((a, b) => {
-//                 let result;
-
-//                 if (typeof a[sortBy] === 'string') {
-//                     result = a[sortBy].localeCompare(b[sortBy]);
-//                 } else {
-//                     result = a[sortBy] - b[sortBy];
-//                 }
-
-//                 return ascending ? result : -result;
-//             });
-//         };
-
-//         function is_ascending() {
-//             const sortButton = document.getElementById("sortOrder");
-//             if (sortButton.textContent == "↑") {
-//                 return true;
-//             } else {
-//                 return false;
-//             };
-//         }
-
-//         function render_with_sort(date, sort_val, asc = false) {
-//             sort(sort_val, asc);
-//             renderDemons(date);
-//         };
-
-//         function get_date() {
-//             const year = date_input.valueAsDate.getFullYear();
-//             const month = date_input.valueAsDate.getMonth();
-//             const day = date_input.valueAsDate.getDate();
-//             const date = new Date(year, month, day);
-//             console.log(date)
-//             return date;
-//         };
-
-
-//         render_with_sort(new Date(), "gddlRating")
-
-//         const sortSelect = document.getElementById('sort');
-//         var sortBy = sortSelect.value;
-//         var date = get_date();
-
-//         sortSelect.addEventListener('change', () => {
-//             sortBy = sortSelect.value;
-//             render_with_sort(date, sortBy, is_ascending())
-//         });
-
-//         const sortButton = document.getElementById("sortOrder");
-//         sortButton.addEventListener("click", () => {
-//             if (is_ascending()) {
-//                 sortButton.textContent = "↓"
-//             } else {
-//                 sortButton.textContent = "↑"
-//             };
-//             render_with_sort(date, sortBy, is_ascending())
-//         });
-
-//         date_input.addEventListener("change", () => {
-//             date = get_date();
-//             console.log(date)
-//             render_with_sort(date, sortBy, is_ascending())
-//         });
-//     })
-//     .catch(error => console.error("Error loading demons:", error));
+    add_demon()
+});
