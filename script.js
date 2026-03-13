@@ -204,7 +204,7 @@ submit_demon_button.addEventListener("click", () => {
             alert("Demon added!")
             formOverlay.style.display = "none";
         } else {
-            alert("Failed: " + JSON.stringify(result))
+            alert("Failed fuck you" + JSON.stringify(result))
         }
     }
 
