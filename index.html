@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platinum's Demonlist</title>
-    <link rel="icon" type="image/x-icon" href="assets/hard demon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Platinum's Demonlist</title>
+        <link rel="icon" type="image/x-icon" href="assets/hard demon.ico">
+        <link rel="stylesheet" href="output.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <header>
-        <div class="header-content">
-            <h1>Platinum's Demonlist</h1>
+    <body class="pt-30 bg-[#1B1B2F]">
 
-            <button id="open-form-btn" class="submit-demon-button">Submit Demon</button>
-            <div id="controls" class="sort-menu">
-                <input type="date" value="" class="date-input" id="date-input">
-                <label for="sort">Sort by:</label>
-                <select id="sort">
-                    <option value="gddl_rating">GDDL Rating</option>
-                    <option value="enjoyment">Enjoyment</option>
-                    <option value="attempts">Attempts</option>
-                    <option value="date_beaten">Date Beaten</option>
-                </select>
-                <button id="sort-order" class="sort-btn" title="Toggle ascending/descending">↓</button>
+        <header class="fixed z-52 top-0 left-0 flex w-full h-1/10 bg-[#2C2C50] drop-shadow-2xl">
+            <div class="flex items-center w-full">
+                <div class="text-5xl ml-12 font-bold">Platinum's Demonlist</div>
+
+                <button class="absolute left-1/2 -translate-x-1/2 button-style p-1 px-2" id="open-form-btn">Submit Demon</button>
+
+                <div id="controls" class="absolute right-12 flex items-center gap-2">
+                    <input class="button-style p-1 px-2" type="date" id="date-input">
+                    <label for="sort" class="font-semibold p-1">Sort by:</label>
+                    <select id="sort" class="button-style p-1 px-2">
+                        <option value="gddl_rating">GDDL Rating</option>
+                        <option value="enjoyment">Enjoyment</option>
+                        <option value="attempts">Attempts</option>
+                        <option value="date_beaten">Date Beaten</option>
+                    </select>
+                    <button class="button-style p-1 px-2" id="sort-order" title="Toggle ascending/descending">↓</button>
+                </div>
             </div>
-        </div>
+        </header>
 
-    </header>
+        <main>
+            <div id="demon-list" class="flex flex-col gap-6 scroll-smooth"></div>
+        </main>
 
-    <main>
-        <div id="demon-list"></div>
-        <div id="form-overlay" style="display: none;">
-            <div id="add-demon-form">
-                <h2>Add a New Demon</h2>
+        <div id="form-overlay" class="fixed inset-0 bg-black/50 flex items-center justify-center z-100" style="display:none;">
+            <div class="bg-[#2C2C50] p-8 w-1/3 rounded-lg">
+                <div id="add-demon-form" class="flex flex-col gap-4 w-full">
 
-                <label for="demon-name">Demon Name</label>
-                <input id="demon-name" type="text" placeholder="Enter demon name">
+                    <h2 class="font-bold text-2xl">Add a New Demon</h2>
 
-                <label for="level-id">Level ID</label>
-                <input id="level-id" type="text" placeholder="Enter level ID">
+                    <label for="demon-name">Demon Name</label>
+                    <input id="demon-name" type="text" placeholder="Enter demon name" class="button-style p-1.5 w-full">
 
-                <label for="difficulty">Difficulty</label>
-                <input id="difficulty" type="text" placeholder="Enter demon difficulty">
+                    <label for="level-id">Level ID</label>
+                    <input id="level-id" type="text" placeholder="Enter level ID" class="button-style p-1.5 w-full">
 
-                <label for="attempts">Attempts</label>
-                <input id="attempts" type="number" placeholder="Number of attempts">
+                    <label for="difficulty">Difficulty</label>
+                    <input id="difficulty" type="text" placeholder="Enter demon difficulty" class="button-style p-1.5 w-full">
 
-                <label for="gddl-rating">GDDL Rating</label>
-                <input id="gddl-rating" type="number" step="0.1" placeholder="GDDL rating">
+                    <label for="attempts">Attempts</label>
+                    <input id="attempts" type="number" placeholder="Number of attempts" class="button-style p-1.5 w-full">
 
-                <label for="enjoyment">Enjoyment</label>
-                <input id="enjoyment" type="number" step="0.1" placeholder="Enjoyment rating">
+                    <label for="gddl-rating">GDDL Rating</label>
+                    <input id="gddl-rating" type="number" step="0.1" placeholder="GDDL rating" class="button-style p-1.5 w-full">
 
-                <label for="date-beaten">Date Beaten</label>
-                <input id="date-beaten" type="date">
+                    <label for="enjoyment">Enjoyment</label>
+                    <input id="enjoyment" type="number" step="0.1" placeholder="Enjoyment rating" class="button-style p-1.5 w-full">
 
-                <div class="form-buttons">
-                    <button id="submit-demon" class="submit-demon-button">Submit</button>
-                    <button id="cancel-demon" class="submit-demon-button cancel-btn">Cancel</button>
+                    <label for="date-beaten">Date Beaten</label>
+                    <input id="date-beaten" type="date" class="button-style p-1.5 w-full">
+
+                    <div class="flex justify-around pt-2">
+                        <button id="submit-demon" class="button-style p-1.5">Submit</button>
+                        <button id="cancel-submit" class="button-style p-1.5">Cancel</button>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </main>
 
-    <script type="module" src="script.js"></script>
-</body>
-
+        <script src="https://cdn.jsdelivr.net/gh/PsychoGoldfishNG/NewgroundsIO-JS@8c72515/dist/NewgroundsIO.min.js"></script>
+        <script type="module" src="js/main.js"></script>
+    </body>
 </html>
